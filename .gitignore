@@ -3,6 +3,12 @@ _RnD/
 
 # Jekyll
 _site/
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+node_modules
+Gemfile.lock
 .sass-cache/
 
 # Windows image file caches
