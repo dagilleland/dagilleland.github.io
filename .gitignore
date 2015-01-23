@@ -1,5 +1,7 @@
 # My Machine
 _RnD/
+*.sln
+*.suo
 
 # Jekyll
 _site/
@@ -29,3 +31,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
