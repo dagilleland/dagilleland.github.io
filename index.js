@@ -159,7 +159,10 @@ var app = new Vue({
 }).$mount('#app')
 
 function fetchMarkdown(path,htmlProcess,callback) {
-  fetch(path)
+  fetch(path,{ method: 'GET',
+              //  headers: myHeaders,
+              //  mode: 'cors',
+               cache: 'reload' })
     .then(function(response) {
       if(response.ok) {
         console.log('loaded');
