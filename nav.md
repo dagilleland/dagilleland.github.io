@@ -1,5 +1,6 @@
 ### Articles
 
+- [Reboot](posts/reboot.md)
 - [Sample Post](posts/sample-post.md "sample")
 - [Sample w. Images](posts/sample-post-images.md "images sample")
 - [Sample Link Post](posts/sample-link-post.md "sample link")
