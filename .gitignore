@@ -1,17 +1,7 @@
 # My Machine
 _RnD/
-*.sln
-*.suo
-
-# Jekyll
-_site/
-.DS_Store
-*.sublime-project
-*.sublime-workspace
-codekit-config.json
-node_modules
-Gemfile.lock
-.sass-cache/
+[Rr]n[Dd]/
+[Nn]o[Tt]rack/
 
 # Windows image file caches
 Thumbs.db
