@@ -104,6 +104,8 @@ const router = new VueRouter({
 // 4. Create and mount the root instance.
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
+var sb;
+
 var app = new Vue({
   router: router, // in es6, just use:  router
   devtools: true,
@@ -126,6 +128,7 @@ var app = new Vue({
       for (var link of links) {
         link.href = link.href.replace('/posts','/#/posts');
       }
+sb = tmp.childNodes;      
       return tmp.innerHTML;
     }
   },
@@ -217,3 +220,38 @@ if(self.fetch) {
 //     })
 //   }
 // })
+
+
+function fromSb() {
+  var ar = [];
+  if(sb.length > 0) {
+    var elm = sb[0];
+    let obj;
+    do {
+      if(elm.tagName === 'H1') {
+        if(obj) ar.push(obj);
+        obj = {
+          name: elm.innerText,
+          content: [elm],
+          links:[]
+        };
+      } else if(elm.tagName === 'UL') {
+        obj.content.push(elm);
+        var li = elm.getElementsByTagName('li');
+        for(let v of li) {
+          for(let a of v.getElementsByTagName('a')) {
+            obj.links.push({
+              rel:a.href.replace(a.baseURI,''),
+              tags:a.title.split(' ')
+            });
+          }
+        }
+      } else {
+        obj.content.push(elm);
+      }
+      elm = elm.nextElementSibling;
+    }while(elm);
+    if(obj) ar.push(obj);
+  }
+  return ar;
+}

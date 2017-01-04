@@ -1,6 +1,12 @@
-### Articles
+# Home
+
+# Articles
 
 - [Reboot](posts/reboot.md)
+- [Bug List](posts/bug-list.md)
+
+# Samples
+
 - [Sample Post](posts/sample-post.md "sample")
 - [Sample w. Images](posts/sample-post-images.md "images sample")
 - [Sample Link Post](posts/sample-link-post.md "sample link")
@@ -11,4 +17,3 @@
 - [Video Post](posts/video-post.md "video")
 - [Code Highlighting](posts/code-highlighting-post.md "code")
 - [Background Image](posts/background-image.md "image")
-- [Bug List](posts/bug-list.md)
