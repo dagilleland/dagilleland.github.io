@@ -161,6 +161,46 @@ sb = tmp.childNodes;
   }
 }).$mount('#app')
 
+function fetchMarkdown2(path) {
+  return fetch(path, { method: 'GET', cache: 'reload'})
+    .then(status)
+    .then(markdownToMarkup)
+    .catch(consoleLogFetchError)
+}
+
+function status(response) {  
+  if (response.status >= 200 && response.status < 300) {  
+    return Promise.resolve(response)  
+  } else {  
+    return Promise.reject(new Error(response.statusText))  
+  }  
+}
+
+function markdownToFrontMatterMarkup(text) {
+  var content = fm(text);
+  content.markup = markdownToMarkup(content.body);
+  return content;
+}
+
+
+function markdownToMarkup(text) {
+  var markup = marked(text);
+  return markup;
+}
+
+function consoleLogFetchError(response) {
+  // right now, just console-logging the error
+  console.log('<!--  Fetch Error:');
+  console.log(response.headers.get('Content-Type'));  
+  console.log(response.headers.get('Date'));
+
+  console.log(response.status);  
+  console.log(response.statusText);  
+  console.log(response.type);  
+  console.log(response.url); 
+  console.log('... end Fetch Error-->');
+}
+
 function fetchMarkdown(path,htmlProcess,callback) {
   fetch(path,{ method: 'GET',
               //  headers: myHeaders,
@@ -222,7 +262,7 @@ if(self.fetch) {
 // })
 
 
-function fromSb() {
+function parseNav(sb) {
   var ar = [];
   if(sb.length > 0) {
     var elm = sb[0];
