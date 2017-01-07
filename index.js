@@ -35,8 +35,8 @@ function customLinkRenderer(href, title, text) { // string, string, string
 renderer.link = customLinkRenderer;
 function customImageRenderer(href, title, text) { // string, string, string
   if(!href.startsWith('http')){
-    href += 'posts/';
-    href.replace('//','/');
+    href = 'posts/' + href;
+    href = href.replace('//','/');
   }
 
   var out = '<img src="' + href + '" alt="' + text + '"';
