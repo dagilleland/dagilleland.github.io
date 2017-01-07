@@ -2,8 +2,13 @@
 <head>
   <title>dagilleland.github.io</title>
   <base href="/">
+
+  <script>
+  function require(module) {
+    console.error('requirejs dependency: Some module is requiring "' + module + '": ' + Function.caller.caller.toString());
+  }
+  </script>
   <!-- Polyfills -->
-  
   <script src="https://unpkg.com/whatwg-fetch"></script>
   <!-- Vue packages -->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
