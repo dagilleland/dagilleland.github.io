@@ -187,6 +187,7 @@ function markdownToFrontMatterMarkup(text) {
   var fm = [];
   if(text.indexOf('---')===0) {
     fm = md.splice(0,md.indexOf('---',1));
+    md = md.splice(1,md.length - 1);
   }
   var fms = fm.join('\n');
   var mds = md.join('\n');
