@@ -125,7 +125,9 @@ li a {
 }
 
 main { /* the tag.. */
-    column-count: 2;
+    /*column-count: 2;*/
+    column-width: 200px;
+    column-rule: 1px solid saddlebrown;
     column-gap: 2em;
 }
 
