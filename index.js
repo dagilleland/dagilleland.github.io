@@ -44,7 +44,9 @@ const MdContent = {
       console.log('Create of MdContent');
       // console.log(to);
       var toFile = 'posts/' + this.$route.params.mdFile;
-      fetchMarkdown(toFile, null, this.process);
+      // fetchMarkdown(toFile, null, this.process);
+      var process = this.process;
+      fetchMarkdown2(toFile).then(process);
       // console.log(from);
   },
   watch: {
@@ -52,7 +54,9 @@ const MdContent = {
       console.log('Inside MdContent');
       // console.log(to);
       var toFile = 'posts/' + to.params.mdFile;
-      fetchMarkdown(toFile, null, this.process);
+      // fetchMarkdown(toFile, null, this.process);
+      var process = this.process;
+      fetchMarkdown2(toFile).then(process);
       // console.log(from);
     }
   }
@@ -164,7 +168,7 @@ sb = tmp.childNodes;
 function fetchMarkdown2(path) {
   return fetch(path, { method: 'GET', cache: 'reload'})
     .then(status)
-    .then(markdownToMarkup)
+    .then(markdownToFrontMatterMarkup)
     .catch(consoleLogFetchError)
 }
 
@@ -177,16 +181,20 @@ function status(response) {
 }
 
 function markdownToFrontMatterMarkup(text) {
-  var content = fm(text);
-  content.markup = markdownToMarkup(content.body);
+  var md = text.split('\n');
+  var fm = [];
+  if(text.indexOf('---')===0) {
+    fm = md.splice(0,md.indexOf('---',1));
+  }
+  var fms = fm.join('\n');
+  var mds = md.join('\n');
+  var content = {
+    frontMatter: YAML.parse(fms),
+    markup: marked.parse(mds)
+  }
   return content;
 }
 
-
-function markdownToMarkup(text) {
-  var markup = marked(text);
-  return markup;
-}
 
 function consoleLogFetchError(response) {
   // right now, just console-logging the error
@@ -201,6 +209,8 @@ function consoleLogFetchError(response) {
   console.log('... end Fetch Error-->');
 }
 
+
+// OBSOLETE
 function fetchMarkdown(path,htmlProcess,callback) {
   fetch(path,{ method: 'GET',
               //  headers: myHeaders,
