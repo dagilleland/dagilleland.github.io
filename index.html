@@ -4,11 +4,12 @@
   <base href="/">
 
   <script>
-  function require(module) {
-    console.error('requirejs dependency: Some module is requiring "' + module + '"');
-  }
+  // function require(module) {
+  //   console.error('requirejs dependency: Some module is requiring "' + module + '"');
+  // }
   </script>
   <!-- Polyfills -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
   <script src="https://unpkg.com/whatwg-fetch"></script>
   <!-- Vue packages -->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
