@@ -25,8 +25,9 @@ const MdContent = {
     }
   },
   methods: {
-    process(htmlContent) {
+    process(content) {
       // console.log('loading mdcontent' + htmlContent);
+      var htmlContent = content.markup;
       this.$data.theContent = htmlContent;
     }
   },
