@@ -5,8 +5,7 @@
 
   <script>
   function require(module) {
-    var caller = Function.caller ? Function.caller.toString() : '';
-    console.error('requirejs dependency: Some module is requiring "' + module + '": ' + Function.caller.toString());
+    console.error('requirejs dependency: Some module is requiring "' + module + '"');
   }
   </script>
   <!-- Polyfills -->
