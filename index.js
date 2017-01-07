@@ -13,6 +13,10 @@ function customHeadingRenderer (text, level) {
 };
 renderer.heading = customHeadingRenderer;
 function customLinkRenderer(href, title, text) { // string, string, string
+  if(!href.startsWith('http')){
+    href = 'posts/' + href;
+    href = href.replace('//','/');
+  }
   if (this.options.sanitize) {
     try {
       var prot = decodeURIComponent(unescape(href))
@@ -38,7 +42,6 @@ function customImageRenderer(href, title, text) { // string, string, string
     href = 'posts/' + href;
     href = href.replace('//','/');
   }
-
   var out = '<img src="' + href + '" alt="' + text + '"';
   if (title) {
     out += ' title="' + title + '"';
