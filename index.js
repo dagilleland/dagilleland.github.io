@@ -168,6 +168,7 @@ sb = tmp.childNodes;
 function fetchMarkdown2(path) {
   return fetch(path, { method: 'GET', cache: 'reload'})
     .then(status)
+    .then(responseToText)
     .then(markdownToFrontMatterMarkup)
     .catch(consoleLogFetchError)
 }
@@ -179,7 +180,7 @@ function status(response) {
     return Promise.reject(new Error(response.statusText))  
   }  
 }
-
+function responseToText(response) { return response.text();}
 function markdownToFrontMatterMarkup(text) {
   var md = text.split('\n');
   var fm = [];
