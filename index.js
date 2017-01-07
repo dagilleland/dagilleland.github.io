@@ -1,3 +1,49 @@
+// Custom Markdown Renderings
+var renderer = new marked.Renderer();
+
+function customHeadingRenderer (text, level) {
+  var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+
+  return '<h' + level + '><a name="' +
+                escapedText +
+                 '" class="anchor" href="#' +
+                 escapedText +
+                 '"><span class="header-link"></span></a>' +
+                  text + '</h' + level + '>';
+};
+renderer.heading = customHeadingRenderer;
+function customLinkRenderer(href, title, text) { // string, string, string
+  if (this.options.sanitize) {
+    try {
+      var prot = decodeURIComponent(unescape(href))
+        .replace(/[^\w:]/g, '')
+        .toLowerCase();
+    } catch (e) {
+      return '';
+    }
+    if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0) {
+      return '';
+    }
+  }
+  var out = '<a href="' + href + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  out += '>' + text + '</a>';
+  return out;
+}
+renderer.link = customLinkRenderer;
+function customImageRenderer(href, title, text) { // string, string, string
+  var out = '<img src="' + href + '" alt="' + text + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  out += this.options.xhtml ? '/>' : '>';
+  return out;
+}
+renderer.image = customImageRenderer;
+
+
 // 0. If using a module system, call Vue.use(VueRouter)
 Vue.use(VueRouter);
 
@@ -193,7 +239,7 @@ function markdownToFrontMatterMarkup(text) {
   var mds = md.join('\n');
   var content = {
     frontMatter: YAML.parse(fms),
-    markup: marked.parse(mds)
+    markup: marked.parse(mds,{ renderer: renderer })
   }
   return content;
 }
