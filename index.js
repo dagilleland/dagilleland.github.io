@@ -174,7 +174,7 @@ var app = new Vue({
   //el: '#content',
   data: {
     message: 'Hello Vue!',
-    posts: null
+    posts: ''
   },
   methods: {
     callback(contentHtml) {
@@ -248,7 +248,7 @@ function consoleLogFetchError(response) {
 
 // OBSOLETE
 function fetchMarkdown(path,htmlProcess,callback) {
-  console.error('Dev note: fetchMarkdown is deprecated.');
+  console.log('Dev note: fetchMarkdown is deprecated.');
   fetch(path,{ method: 'GET',
               //  headers: myHeaders,
               //  mode: 'cors',
