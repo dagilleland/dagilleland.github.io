@@ -248,7 +248,7 @@ function consoleLogFetchError(response) {
 
 // OBSOLETE
 function fetchMarkdown(path,htmlProcess,callback) {
-  console.err('Dev note: fetchMarkdown is deprecated.');
+  console.error('Dev note: fetchMarkdown is deprecated.');
   fetch(path,{ method: 'GET',
               //  headers: myHeaders,
               //  mode: 'cors',
