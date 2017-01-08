@@ -174,14 +174,14 @@ var app = new Vue({
   //el: '#content',
   data: {
     message: 'Hello Vue!',
-    posts: ''
+    posts: []
   },
   methods: {
     callback(contentHtml) {
       // console.log('--- callback ---');
       // console.log(contentHtml);
       // console.log('--- end callback ---');
-      this.posts = parse
+      this.message = contentHtml;
     },
     routerlink(markup) {
       var tmp = document.createElement('nav');
