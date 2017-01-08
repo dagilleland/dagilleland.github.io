@@ -12,6 +12,7 @@ function customHeadingRenderer (text, level) {
                   text + '</h' + level + '>';
 };
 renderer.heading = customHeadingRenderer;
+
 function customLinkRenderer(href, title, text) { // string, string, string
   if(!href.startsWith('http')){
     href = 'posts/' + href;
@@ -37,6 +38,7 @@ function customLinkRenderer(href, title, text) { // string, string, string
   return out;
 }
 renderer.link = customLinkRenderer;
+
 function customImageRenderer(href, title, text) { // string, string, string
   if(!href.startsWith('http')){
     href = 'posts/' + href;
@@ -75,14 +77,15 @@ const MdContent = {
   template: '<div v-html="theContent" class="markdown-body"></div>',
   data: function(){
     return {
-      theContent: ''
+      theContent: '',
+      frontMatter: {}
     }
   },
   methods: {
     process(content) {
       // console.log('loading mdcontent' + htmlContent);
-      var htmlContent = content.markup;
-      this.$data.theContent = htmlContent;
+      this.$data.theContent = content.markup;
+      this.$data.frontMatter = content.frontMatter;
     }
   },
   // beforeRouteEnter (to, from, next) {
@@ -171,14 +174,14 @@ var app = new Vue({
   //el: '#content',
   data: {
     message: 'Hello Vue!',
-    posts: ''
+    posts: null
   },
   methods: {
     callback(contentHtml) {
       // console.log('--- callback ---');
       // console.log(contentHtml);
       // console.log('--- end callback ---');
-      this.message = contentHtml;
+      this.posts = parse
     },
     routerlink(markup) {
       var tmp = document.createElement('nav');
@@ -187,36 +190,12 @@ var app = new Vue({
       for (var link of links) {
         link.href = link.href.replace('/posts','/#/posts');
       }
-sb = tmp.childNodes;      
+      this.posts = parseNav(tmp.childNodes);
       return tmp.innerHTML;
     }
   },
   created: function(){
     fetchMarkdown('nav.md', this.routerlink, this.callback);
-    // fetch('nav.md')
-    // .then(function(response) { // Check the Response
-    //   if(response.ok) {
-    //     console.log('loaded');
-    //     return response.text();
-    //   } else {
-    //     console.log('not loaded');
-    //   }
-    // })
-    // .then(function(text){ // Process the text of the Response
-    //   console.log(text);
-    //   var markup = marked(text);
-    //   var tmp = document.createElement('nav');
-    //   tmp.innerHTML = markup;
-    //   var links = tmp.getElementsByTagName('a');
-    //   for (var link of links) {
-    //     link.href = link.href.replace('/posts','/#/posts');
-    //   }
-    //   markup = tmp.innerHTML;
-    //   // this.app.$data.message = markup;
-    // })
-    // .catch(function(err) {
-    //   console.log(err);
-    // })
   }
 }).$mount('#app')
 
@@ -269,6 +248,7 @@ function consoleLogFetchError(response) {
 
 // OBSOLETE
 function fetchMarkdown(path,htmlProcess,callback) {
+  console.err('Dev note: fetchMarkdown is deprecated.');
   fetch(path,{ method: 'GET',
               //  headers: myHeaders,
               //  mode: 'cors',
