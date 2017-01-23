@@ -27,7 +27,7 @@
     function responseToText(response) { return response.text(); }
 
     function markdownToFrontMatterMarkup(text) {
-      var md = text.split(/\r\n/);
+      var md = text.split(/\r?\n/); // \r is optional to work both locally with lite-server and in production
       var fm = [];
       if (md.indexOf('---') === 0) {
         fm = md.splice(0, md.indexOf('---', 1));
