@@ -1,8 +1,13 @@
+---
+layout: side
+
+---
 # Home
 
 # Articles
 
-- [Reboot](posts/reboot.md)
+- [About (*Colophon*)](about.md)
+- [Reboot](posts/reboot.md|class:test|data-tag:demo "Title Attribute")
 - [Bug List](posts/bug-list.md)
 
 # Samples

@@ -3,6 +3,10 @@ _RnD/
 [Rr]n[Dd]/
 [Nn]o[Tt]rack/
 
+# Logging
+debug.log
+
+## ====== OS Errata ========
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

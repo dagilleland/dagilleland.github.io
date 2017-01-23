@@ -1,23 +1,24 @@
 // Custom Markdown Renderings
 var renderer = new marked.Renderer();
 
-function customHeadingRenderer (text, level) {
+function customHeadingRenderer(text, level) {
   var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
   return '<h' + level + '><a name="' +
-                escapedText +
-                 '" class="anchor" href="#' +
-                 escapedText +
-                 '"><span class="header-link"></span></a>' +
-                  text + '</h' + level + '>';
+    escapedText +
+    '" class="anchor" href="#' +
+    escapedText +
+    '"><span class="header-link"></span></a>' +
+    text + '</h' + level + '>';
 };
 renderer.heading = customHeadingRenderer;
 
 function customLinkRenderer(href, title, text) { // string, string, string
-  if(!href.startsWith('http')){
-    href = 'posts/' + href;
-    href = href.replace('//','/');
-  }
+  // if (!href.startsWith('http')) {
+  //   href = 'posts/' + href;
+  //   href = href.replace('//', '/');
+  // }
+  console.log({ href: href, title: title, text: text });
   if (this.options.sanitize) {
     try {
       var prot = decodeURIComponent(unescape(href))
@@ -40,9 +41,9 @@ function customLinkRenderer(href, title, text) { // string, string, string
 renderer.link = customLinkRenderer;
 
 function customImageRenderer(href, title, text) { // string, string, string
-  if(!href.startsWith('http')){
+  if (!href.startsWith('http')) {
     href = 'posts/' + href;
-    href = href.replace('//','/');
+    href = href.replace('//', '/');
   }
   var out = '<img src="' + href + '" alt="' + text + '"';
   if (title) {
@@ -61,11 +62,11 @@ Vue.use(VueRouter);
 // These can be imported from other files
 const TagRouteComponent = {
   template: '<div>Tags {{ $route.params.tags }}</div>',
-  created(){
-    
+  created() {
+
   },
   watch: {
-    '$route' (to, from) {
+    '$route'(to, from) {
       console.log('Inside TagRouteComponent');
       // console.log(to);
       var toFile = to.params.tags;
@@ -75,7 +76,7 @@ const TagRouteComponent = {
 }
 const MdContent = {
   template: '<div v-html="theContent" class="markdown-body"></div>',
-  data: function(){
+  data: function () {
     return {
       theContent: '',
       frontMatter: {}
@@ -99,16 +100,16 @@ const MdContent = {
   //   // has access to `this` component instance.
   // },
   created() {
-      console.log('Create of MdContent');
-      // console.log(to);
-      var toFile = 'posts/' + this.$route.params.mdFile;
-      // fetchMarkdown(toFile, null, this.process);
-      var process = this.process;
-      fetchMarkdown2(toFile).then(process);
-      // console.log(from);
+    console.log('Create of MdContent');
+    // console.log(to);
+    var toFile = 'posts/' + this.$route.params.mdFile;
+    // fetchMarkdown(toFile, null, this.process);
+    var process = this.process;
+    fetchMarkdown2(toFile).then(process);
+    // console.log(from);
   },
   watch: {
-    '$route' (to, from) {
+    '$route'(to, from) {
       console.log('Inside MdContent');
       // console.log(to);
       var toFile = 'posts/' + to.params.mdFile;
@@ -121,7 +122,7 @@ const MdContent = {
 }
 const HomeComponent = {
   template: '<div v-html="theContent" class="markdown-body"></div>',
-  data: function(){
+  data: function () {
     return {
       theContent: 'loading....'
     }
@@ -132,11 +133,11 @@ const HomeComponent = {
       this.$data.theContent = htmlContent;
     }
   },
-  created(){
+  created() {
     fetchMarkdown('README.md', null, this.process);
   },
   watch: {
-    '$route' (to, from) {
+    '$route'(to, from) {
       console.log('Inside HomeComponent');
       // console.log(to);
       fetchMarkdown('README.md', null, this.process);
@@ -153,6 +154,7 @@ const routes = [
   // dynamic segements start with a colon
   { path: '/tags/:tags', component: TagRouteComponent },
   { path: '/posts/:mdFile', component: MdContent },
+  { path: '/temp/', component: HomeComponent },
   { path: '/', component: HomeComponent }
 ];
 
@@ -166,7 +168,6 @@ const router = new VueRouter({
 // 4. Create and mount the root instance.
 // Make sure to inject the router with the router option to make the
 // whole app router-aware.
-var sb;
 
 var app = new Vue({
   router: router, // in es6, just use:  router
@@ -174,7 +175,9 @@ var app = new Vue({
   //el: '#content',
   data: {
     message: 'Hello Vue!',
-    posts: []
+    posts: ['emp'],
+    frontMatter: null,
+    navDoc: navDoc
   },
   methods: {
     callback(contentHtml) {
@@ -188,45 +191,51 @@ var app = new Vue({
       tmp.innerHTML = markup;
       var links = tmp.getElementsByTagName('a');
       for (var link of links) {
-        link.href = link.href.replace('/posts','/#/posts');
+        link.href = link.href.replace('/posts', '/#/posts');
       }
       this.posts = parseNav(tmp.childNodes);
       return tmp.innerHTML;
     }
   },
-  created: function(){
-    fetchMarkdown('nav.md', this.routerlink, this.callback);
+  created: function () {
+      fetchMarkdown2(this.navDoc)
+        .then(function (content) {
+          app.frontMatter = content.frontMatter;
+          return content.markup;
+        })
+        .then(this.routerlink)
+        .then(this.callback);
   }
 }).$mount('#app')
 
 function fetchMarkdown2(path) {
-  return fetch(path, { method: 'GET', cache: 'reload'})
+  return fetch(path, { method: 'GET', cache: 'reload' })
     .then(status)
     .then(responseToText)
     .then(markdownToFrontMatterMarkup)
     .catch(consoleLogFetchError)
 }
 
-function status(response) {  
-  if (response.status >= 200 && response.status < 300) {  
-    return Promise.resolve(response)  
-  } else {  
-    return Promise.reject(new Error(response.statusText))  
-  }  
+function status(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return Promise.resolve(response)
+  } else {
+    return Promise.reject(new Error(response.statusText))
+  }
 }
-function responseToText(response) { return response.text();}
+function responseToText(response) { return response.text(); }
 function markdownToFrontMatterMarkup(text) {
-  var md = text.split('\n');
+  var md = text.split(/\r\n/);
   var fm = [];
-  if(text.indexOf('---')===0) {
-    fm = md.splice(0,md.indexOf('---',1));
-    md = md.splice(1,md.length - 1);
+  if (md.indexOf('---') === 0) {
+    fm = md.splice(0, md.indexOf('---', 1));
+    md = md.splice(1, md.length - 1);
   }
   var fms = fm.join('\n');
   var mds = md.join('\n');
   var content = {
     frontMatter: YAML.parse(fms),
-    markup: marked.parse(mds,{ renderer: renderer })
+    markup: marked.parse(mds, { renderer: renderer })
   }
   return content;
 }
@@ -235,47 +244,49 @@ function markdownToFrontMatterMarkup(text) {
 function consoleLogFetchError(response) {
   // right now, just console-logging the error
   console.log('<!--  Fetch Error:');
-  console.log(response.headers.get('Content-Type'));  
+  console.log(response.headers.get('Content-Type'));
   console.log(response.headers.get('Date'));
 
-  console.log(response.status);  
-  console.log(response.statusText);  
-  console.log(response.type);  
-  console.log(response.url); 
+  console.log(response.status);
+  console.log(response.statusText);
+  console.log(response.type);
+  console.log(response.url);
   console.log('... end Fetch Error-->');
 }
 
 
 // OBSOLETE
-function fetchMarkdown(path,htmlProcess,callback) {
+function fetchMarkdown(path, htmlProcess, callback) {
   console.log('Dev note: fetchMarkdown is deprecated.');
-  fetch(path,{ method: 'GET',
-              //  headers: myHeaders,
-              //  mode: 'cors',
-               cache: 'reload' })
-    .then(function(response) {
-      if(response.ok) {
+  fetch(path, {
+    method: 'GET',
+    //  headers: myHeaders,
+    //  mode: 'cors',
+    cache: 'reload'
+  })
+    .then(function (response) {
+      if (response.ok) {
         console.log('loaded');
         return response.text();
       } else {
         console.log('not loaded');
       }
     })
-    .then(function(text){
+    .then(function (text) {
       // console.log(text);
       var markup = marked(text);
-      if(htmlProcess)
+      if (htmlProcess)
         markup = htmlProcess(markup);
       callback(markup);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log(err);
     })
 };
 
 
 // Postscript testing....
-if(self.fetch) {
+if (self.fetch) {
   // run my fetch request here
   console.log("fetch working")
 } else {
@@ -311,25 +322,25 @@ if(self.fetch) {
 
 function parseNav(sb) {
   var ar = [];
-  if(sb.length > 0) {
+  if (sb.length > 0) {
     var elm = sb[0];
     let obj;
     do {
-      if(elm.tagName === 'H1') {
-        if(obj) ar.push(obj);
+      if (elm.tagName === 'H1') {
+        if (obj) ar.push(obj);
         obj = {
           name: elm.innerText,
           content: [elm],
-          links:[]
+          links: []
         };
-      } else if(elm.tagName === 'UL') {
+      } else if (elm.tagName === 'UL') {
         obj.content.push(elm);
         var li = elm.getElementsByTagName('li');
-        for(let v of li) {
-          for(let a of v.getElementsByTagName('a')) {
+        for (let v of li) {
+          for (let a of v.getElementsByTagName('a')) {
             obj.links.push({
-              rel:a.href.replace(a.baseURI,''),
-              tags:a.title.split(' ')
+              rel: a.href.replace(a.baseURI, ''),
+              tags: a.title.split(' ')
             });
           }
         }
@@ -337,8 +348,8 @@ function parseNav(sb) {
         obj.content.push(elm);
       }
       elm = elm.nextElementSibling;
-    }while(elm);
-    if(obj) ar.push(obj);
+    } while (elm);
+    if (obj) ar.push(obj);
   }
   return ar;
 }
