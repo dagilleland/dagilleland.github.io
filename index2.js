@@ -230,7 +230,7 @@
         // for (var link of links) {
         //   link.href = link.href.replace('/posts', '/#/posts');
         // }
-        this.posts = parseNav(tmp.childNodes);
+        this.posts = 'Not using parseNav';// parseNav(tmp.childNodes);
         return tmp.innerHTML;
       }
     },
