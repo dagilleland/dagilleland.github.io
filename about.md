@@ -4,6 +4,15 @@ remarks: nav.md acts as the navigation map for the entire site. The layout setti
 
 # About
 
+## Markdown Parsing
+
+Variants on Markdown:
+
+* [Maruku](http://maruku.rubyforge.org/proposal.html#attribute_lists)
+* [Markua](https://leanpub.com/markua/read) by leanpub
+* [Kramdown](https://kramdown.gettalong.org/quickref.html)
+
+
 ## Front-Matter
 
 ### All
