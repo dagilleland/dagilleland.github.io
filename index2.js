@@ -1,4 +1,5 @@
 (function () {
+    window.addEventListener('load', function () {
   /** fetchMarkdown 
    */
   function fetchMarkdown(path) {
@@ -44,15 +45,21 @@
 
     function consoleLogFetchError(response) {
       // right now, just console-logging the error
-      console.log('<!--  Fetch Error:');
-      console.log(response.headers.get('Content-Type'));
-      console.log(response.headers.get('Date'));
+      if(response && response.headers) {
+        console.log('<!--  Fetch Error:');
+        console.log(response.headers.get('Content-Type'));
+        console.log(response.headers.get('Date'));
 
-      console.log(response.status);
-      console.log(response.statusText);
-      console.log(response.type);
-      console.log(response.url);
-      console.log('... end Fetch Error-->');
+        console.log(response.status);
+        console.log(response.statusText);
+        console.log(response.type);
+        console.log(response.url);
+        console.log('... end Fetch Error-->');
+      } else {
+        console.log('<!--  Fetch Error:');
+        console.log(response);
+        console.log('... end Fetch Error-->');
+      }
     }
 
     /* Custom Markdown Renderings */
@@ -69,8 +76,7 @@
 
     function customLinkRenderer(href, title, text) { // string, string, string
       if (!href.startsWith('http')) {
-        href = "#" + MdContent.routePath.replace(':mdFile*',href);
-        // href = href.replace('//', '/');
+        href = hrefToRouteAdapter(href);
       }
       if (this.options.sanitize) {
         try {
@@ -94,8 +100,7 @@
 
     function customImageRenderer(href, title, text) { // string, string, string
       if (!href.startsWith('http')) {
-        href = 'posts/' + href;
-        href = href.replace('//', '/');
+        href = hrefToRouteAdapter(href);
       }
       var out = '<img src="' + href + '" alt="' + text + '"';
       if (title) {
@@ -106,87 +111,63 @@
     }
   };
 
-  /** HomeComponent - home path routing
-   */
-  const HomeComponent = {
-    routePath: '/',
-    template: '<div v-html="theContent" class="markdown-body"></div>',
-    data: function () {
-      return {
-        theContent: 'loading....',
-        homeDoc: homeDoc
-      }
-    },
-    methods: {
-      // process(htmlContent) {
-      process: function (htmlContent) {
-        // console.log('loading mdcontent' + htmlContent);
-        this.$data.theContent = htmlContent;
-      }
-    },
-    created() {
-      fetchMarkdown(homeDoc).then(this.process);
-    },
-    watch: {
-      '$route'(to, from) {
-        console.log('Inside HomeComponent');
-        // console.log(to);
-        fetchMarkdown(homeDoc).then(this.process);
-        // console.log(from);
-      }
-    }
-  };
 
-  /** MdContent - load markdown as html
+  /**
+   * hrefToRouteAdapter - convert a route adapter to 
+   * 
+   * @param {string} href
+   * @returns
+   */
+  function hrefToRouteAdapter(href) {
+    return "#" + MdContent.routePath.replace(':mdFile*',href);
+  }
+
+  /** MdContent - Component to load markdown as html
    */
   const MdContent = {
-    routePath: '/vue/:mdFile*',
-    template: '<div v-html="theContent" class="markdown-body"></div>',
+    routeHomePath: '/',
+    routePath: ':parentNav?/vue/:mdFile*',
+    template: `  <div>
+    <nav v-for="item in navs" v-html="item.markup" :id="item.parent"></nav>
+    <header><h1>{{header.title}}</h1><p>{{header.summary}}</p></header>
+    <main v-html="theContent" class="markdown-body"></main>
+    <footer><ul><li>Author: {{footer.author}}</li><li>Contributors: {{footer.contributors}}</li><li>Created On: {{footer.created}}</li><li>Modified On: {{footer.modified}}</ul></footer>
+  </div>`,
     data: function () {
       return {
         theContent: '',
-        frontMatter: {}
+        frontMatter: {},
+        header: {},
+        footer: {},
+        navs:[]
       }
     },
     methods: {
       process: function (content) {
-        // console.log('loading mdcontent' + htmlContent);
         this.$data.theContent = content.markup;
         this.$data.frontMatter = content.frontMatter;
+        if(content.frontMatter) {
+          this.$data.header = content.frontMatter.header;
+          this.$data.footer = content.frontMatter.footer;
+        }
+      },
+      fetchFile: function(toFile) {
+        if(!toFile) {
+          toFile = this.$root.defaultDoc;
+        }
+        var process = this.process;
+        console.log(process);
+        fetchMarkdown(toFile).then(process);
       }
     },
-    // beforeRouteEnter (to, from, next) {
-    //   // called before the route that renders this component is confirmed.
-    //   // does NOT have access to `this` component instance,
-    //   // because it has not been created yet when this guard is called!
-    // },
-    // beforeRouteLeave (to, from, next) {
-    //   // called when the route that renders this component is about to
-    //   // be navigated away from.
-    //   // has access to `this` component instance.
-    // },
     created() {
-      console.log('Create of MdContent');
-      // console.log(to);
-      var toFile = this.$route.params.mdFile;
-      // fetchMarkdown(toFile, null, this.process);
-      var process = this.process;
-      console.log('MdContent.created():');
-      console.log(process);
-      fetchMarkdown(toFile).then(process);
-      // console.log(from);
+      // TODO: Process parentNav parameter
+      this.navs = this.$root.navs;
+      this.fetchFile(this.$route.params.mdFile);
     },
     watch: {
       '$route'(to, from) {
-        console.log('Inside MdContent');
-        // console.log(to);
-        var toFile = to.params.mdFile;
-        // fetchMarkdown(toFile, null, this.process);
-        var process = this.process;
-        console.log('MdContent.watch():');
-        console.log(process);
-        fetchMarkdown(toFile).then(process);
-        // console.log(from);
+        this.fetchFile(to.params.mdFile);
       }
     }
   };
@@ -195,10 +176,12 @@
     // dynamic segements start with a colon
     // { path: '/tags/:tags', component: TagRouteComponent },
     { path: MdContent.routePath, component: MdContent },
-    { path: HomeComponent.routePath, component: HomeComponent }
+    // TODO: Route for :parentNav
+    { path: MdContent.routeHomePath, component: MdContent }
   ];
-
+console.log(location.pathname.substring(0, location.pathname.lastIndexOf('/')) + '/');
   const router = new VueRouter({
+    base: location.pathname.substring(0, location.pathname.lastIndexOf('/')) + '/',
     routes: routes // in es6, just use:  routes
   });
 
@@ -208,12 +191,11 @@
     // Make sure to inject the router with the router option to make the whole app router-aware.
     router: router, // in es6, just use:  router
     // devtools: false,
-    //el: '#content',
     data: {
-      message: 'Hello Vue!',
-      posts: ['emp'],
       frontMatter: null,
-      navDoc: navDoc
+      navs: [],
+      navDoc: 'nav.md',
+      defaultDoc: 'README.md'
     },
     methods: {
       callback(contentHtml) {
@@ -230,14 +212,48 @@
         // for (var link of links) {
         //   link.href = link.href.replace('/posts', '/#/posts');
         // }
-        this.posts = 'Not using parseNav';// parseNav(tmp.childNodes);
         return tmp.innerHTML;
       }
     },
-    created: function () {
-      fetchMarkdown(navDoc)
+    mounted: function() {
+      this.navDoc = this.$el.dataset.nav;
+      this.defaultDoc = this.$el.dataset.home;
+
+    //   // Load the navigation and the default document
+    // },
+    // created: function () {
+      fetchMarkdown(this.navDoc)
         .then(function (content) {
           app.frontMatter = content.frontMatter;
+          app.navs.push(content.markup);
+// HACK!!
+app.$router.options.routes.forEach(function(e) {
+  e.component.data().navs.push(content.markup)
+});
+// end-hack
+
+
+          var __fm = app.frontMatter;
+          console.log(__fm);
+          if (__fm) {
+            // // el.classList.add($all.nav.position);
+            // var links = el.getElementsByTagName('a');
+            // for (var i = 0; i < links.length; i++) {
+            //   if (__fm.target === 'nav') {
+            //     // then there is a secondary set of navs to be loaded
+            //     var path = links[i].href.replace('#', '');
+            //     fetchMd(path)
+            //       .then(createElement('nav'))
+            //       .then(appendToBody())
+            //       .then(function (e) {
+            //         e.dataset.parentNav = path.replace($location.origin, '');
+            //       });
+            //     // links[i].addEventListener('click', showSubNav);
+            //   } else {
+            //     // links[i].addEventListener('click', doNavClick);
+            //   }
+            // }
+          }
           return content.markup;
         })
         .then(this.routerlink)
@@ -245,39 +261,39 @@
     }
   }).$mount('#app')
 
-// !!!!!!!!!!!!  REFACTOR !!!!!!!!!
-function parseNav(sb) {
-  var ar = [];
-  if (sb.length > 0) {
-    var elm = sb[0];
-    let obj;
-    do {
-      if (elm.tagName === 'H1') {
-        if (obj) ar.push(obj);
-        obj = {
-          name: elm.innerText,
-          content: [elm],
-          links: []
-        };
-      } else if (elm.tagName === 'UL') {
-        obj.content.push(elm);
-        var li = elm.getElementsByTagName('li');
-        for (let v of li) {
-          for (let a of v.getElementsByTagName('a')) {
-            obj.links.push({
-              rel: a.href.replace(a.baseURI, ''),
-              tags: a.title.split(' ')
-            });
-          }
-        }
-      } else {
-        obj.content.push(elm);
-      }
-      elm = elm.nextElementSibling;
-    } while (elm);
-    if (obj) ar.push(obj);
-  }
-  return ar;
-}
-
+// // !!!!!!!!!!!!  REFACTOR !!!!!!!!!
+// function parseNav(sb) {
+//   var ar = [];
+//   if (sb.length > 0) {
+//     var elm = sb[0];
+//     let obj;
+//     do {
+//       if (elm.tagName === 'H1') {
+//         if (obj) ar.push(obj);
+//         obj = {
+//           name: elm.innerText,
+//           content: [elm],
+//           links: []
+//         };
+//       } else if (elm.tagName === 'UL') {
+//         obj.content.push(elm);
+//         var li = elm.getElementsByTagName('li');
+//         for (let v of li) {
+//           for (let a of v.getElementsByTagName('a')) {
+//             obj.links.push({
+//               rel: a.href.replace(a.baseURI, ''),
+//               tags: a.title.split(' ')
+//             });
+//           }
+//         }
+//       } else {
+//         obj.content.push(elm);
+//       }
+//       elm = elm.nextElementSibling;
+//     } while (elm);
+//     if (obj) ar.push(obj);
+//   }
+//   return ar;
+// }
+    });
 })();

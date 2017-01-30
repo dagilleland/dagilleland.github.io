@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <title>dagilleland.github.io</title>
+  <base href="/">
+
+  <script>
+  // function require(module) {
+  //   console.error('requirejs dependency: Some module is requiring "' + module + '"');
+  // }
+  </script>
+<!-- Polyfills -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>-->
+<script src="https://unpkg.com/whatwg-fetch"></script>
+<!-- Vue packages -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<!-- Markdown/Markup packages -->
+<script src="https://unpkg.com/marked"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/esprima/2.7.3/esprima.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.7.0/js-yaml.min.js">// for front-matter</script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.2.8/yaml.min.js"></script>
+<!--<script src="https://unpkg.com/front-matter"></script>-->
+<link rel="stylesheet" href="https://unpkg.com/github-markdown-css">
+
+<!-- Our scripts/styles -->
+
+<script>
+    // Nav component
+    const NavComponent = {
+      template: '<nav id="{parent}" class="{className}" v-html="html"></nav>',
+      props: ['markup', 'position', 'id'],
+      data: function () {
+        return {
+          html: this.markup,
+          className: this.position,
+          parent: this.id
+        }
+      }
+    };
+
+
+    // Root Instance
+    // for lifecycle hooks, see https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
+    window.addEventListener('load', function () {
+      
+      var app = new Vue({
+        components: { 'nav-component': NavComponent},
+        el: '#app',
+        devtools: true,
+        data: {
+          title: 'Sandbox',
+          navDoc: null,
+          defaultDoc: '',
+          navs: []
+        },
+        methods: {
+        },
+        mounted: function() {
+          this.navDoc = this.$el.dataset.nav;
+          this.defaultDoc = this.$el.dataset.home;
+
+          // Load the navigation and the default document
+        },
+        created: function () {
+          this.navs.push({
+              frontmatter: { position: 'top', target: 'nav' },
+              markup: '<ul><li>First</li><li>Second</li></ul>'
+            });
+          this.navs.push({
+              frontmatter: { position: 'side', target: 'nav' },
+              markup: '<ul><li>First</li><li>Second</li></ul>',
+              parent: 'First'
+            });
+          this.navs.push({
+              frontmatter: { position: 'side', target: 'nav' },
+              markup: '<ul><li>First</li><li>Second</li></ul>',
+              parent: 'Second'
+            });
+        }
+      })//.$mount('#app')
+    });
+  </script>
+</head>
+
+<body>
+  <section id='app' data-nav="nav.md" data-home="README.md">
+  <h1>{{ title }}</h1>
+  <nav v-for="item in navs" v-html="item.markup" :class="item.frontmatter.position" :id="item.parent"></nav>
+  <router-view></router-view>
+  </section>
+
+</body>
+
+</html>

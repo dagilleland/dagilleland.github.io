@@ -1,0 +1,59 @@
+<html>
+<head>
+  <style>
+/*** Resets ***/
+
+
+/*** Layout ***/
+body{
+    display:grid;
+    grid-template-columns: 325px auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas: "topnav topnav"
+                         "sidenav main"
+                         "sidenav header"
+                         "sidenav footer"
+}
+
+nav.top {
+    grid-area: topnav;
+}
+
+nav.side {
+    grid-area: sidenav;
+}
+
+header {
+    grid-area: header;
+    background-color:aquamarine;
+}
+main {
+    grid-area: main;
+    background-color:bisque;
+}
+footer {
+    grid-area: footer;
+    background-color:burlywood;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="top">Navigation Top</nav>
+  <nav class="side">Navigation Side</nav>
+
+  <header>
+  <h1>Lorem ipsum dolor.</h1>
+  </header>
+  <main>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ad fuga ullam quia temporibus quod, facilis animi obcaecati facere, explicabo aliquam natus consectetur impedit repellat aliquid, molestias minima saepe nihil!</p>
+  <p>Quisquam dignissimos perferendis, quae vitae, temporibus, architecto ea quidem dolore deserunt aliquam minima libero laboriosam dolorem hic ad sed pariatur expedita necessitatibus obcaecati cumque mollitia eum! Quam, libero molestiae dolor.</p>
+  <p>Delectus ab natus corporis voluptatibus iure harum id error impedit quidem repellendus quia temporibus inventore repudiandae qui, commodi itaque a repellat officia rerum perferendis voluptates corrupti aliquid voluptate eum! Fugiat.</p>
+  <p>Voluptate inventore autem qui eum accusamus nesciunt optio, est quod iste cumque aperiam dolorum molestias aspernatur quasi quidem explicabo. Dignissimos nulla error possimus maxime porro commodi perspiciatis! Velit ut, nisi.</p>
+  </main>
+  <footer>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ad, id? Iure, autem facilis voluptatibus, unde quibusdam recusandae id architecto animi ex aspernatur itaque fugit.</p>
+  </footer>
+</body>
+</html>

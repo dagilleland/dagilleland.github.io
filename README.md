@@ -1,8 +1,11 @@
 ---
 layout: page
-title: About Dan's Blog.
 comments: false
-modified: 2015-01-09
+header:
+  title: About Dan's Blog.
+footer:
+  modified: 2015-01-09
+
 ---
 # dagilleland.github.io
 

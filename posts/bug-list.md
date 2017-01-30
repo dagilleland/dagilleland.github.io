@@ -1,3 +1,13 @@
+---
+header:
+    title: TODO Bug Reports
+    hero: posts/buglist.jpg
+    color: #ffffff
+    summary: During development, I found a crash of lite-server by John Papa, and I captured the details so that I might possibly post a bug report.
+footer:
+    author: Dan Gilleland
+    modified: Jan 29, 2017
+---
 # Bug List
 
 ----
