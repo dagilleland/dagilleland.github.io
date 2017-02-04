@@ -1,0 +1,103 @@
+/*** Resets ***/
+
+
+/*** Layout ***/
+body.basicLayout{
+    display:grid;
+    grid-template-columns: 325px auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas: "topnav topnav"
+                         "sidenav header"
+                         "sidenav main"
+                         "sidenav footer"
+}
+
+nav.top {
+    grid-area: topnav;
+}
+
+nav.side {
+    grid-area: sidenav;
+}
+
+body>header {
+    grid-area: header;
+}
+body>main {
+    grid-area: main;
+}
+body>footer {
+    grid-area: footer;
+}
+
+/*** Components ***/
+
+/* Menu */
+nav ul {
+  list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.top ul {
+    flex-direction: row;
+    flex-wrap: nowrap; /* except for smaller screens */
+    justify-content: space-between;
+}
+
+.side ul {
+    flex-direction: column;
+}
+
+
+/*** Asthetics ***/
+
+/* Menu */
+nav.top, nav.side {
+    padding: 10px;    
+}
+
+nav.top a, nav.side a {
+    text-decoration: none;
+    color: #1950bf;
+}
+
+nav.top {
+    background-color:#ddd;    
+    font-size: 25px;
+}
+nav.side {
+    background-color:#ddd;    
+    font-size: 18px;
+}
+nav.side li {
+    padding: 5px 0;
+}
+
+/* Content - Header, Main, Footer */
+header { position: relative;}
+header img {
+    float: left;
+    max-width: 150px;
+    border: 4px double #eee;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+header h1 {
+    font-size: 2.2em;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.15rem
+}
+
+main h1 {
+    font-size: 1.8em;
+}
+
+/*** Functional ***/
+.hide { display: none; }
+

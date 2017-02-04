@@ -12,9 +12,10 @@
       }
       
     })
+
     /** fetchMarkdown 
      */
-    function fetchMarkdown(path) {
+    function fetchMarkdown(path, {routeAdapter: hrefToRouteAdapter}) { // path: string, options: object
       // Custom Markdown Renderings
       var renderer = new marked.Renderer();
       renderer.heading = customHeadingRenderer;
