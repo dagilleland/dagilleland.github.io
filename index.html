@@ -3,14 +3,9 @@
   <title>dagilleland.github.io</title>
   <base href="/">
 
-  <script>
-  // function require(module) {
-  //   console.error('requirejs dependency: Some module is requiring "' + module + '"');
-  // }
-  </script>
   <!-- Polyfills -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>-->
   <script src="https://unpkg.com/whatwg-fetch"></script>
+
   <!-- Vue packages -->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -27,11 +22,13 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <script src="js/main.js"></script>
+  
 </head>
-<body>
-  <section id='app' data-nav="nav.md" data-home="README.md">
-    <!-- route outlet -->
-    <!-- component matched by the route will render here -->
+<body class="basicLayout">
+  <style rel="stylesheet">
+    .notify { display: float; }
+  </style>
+  <section id='app' data-nav="nav.md" data-home="README.md" data-splash="splash.md">
     <router-view></router-view>
   </section>
 </body>

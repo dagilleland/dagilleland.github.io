@@ -4,30 +4,36 @@
 /*** Layout ***/
 body.basicLayout{
     display:grid;
-    grid-template-columns: 325px auto;
-    grid-column-gap: 20px;
+    grid-template-columns: auto;
+    grid-column-gap: 3px;
     grid-row-gap: 10px;
-    grid-template-areas: "topnav topnav"
-                         "sidenav header"
-                         "sidenav main"
-                         "sidenav footer"
+    grid-template-areas: "topnav topnav topnav"
+                         "leftnav header rightnav"
+                         "leftnav main rightnav"
+                         "leftnav footer rightnav"
 }
 
 nav.top {
     grid-area: topnav;
 }
 
-nav.side {
-    grid-area: sidenav;
+nav.left {
+    grid-area: leftnav;
+    /*grid-area: 2 / 1 / 5 / 2;*/
 }
 
-body>header {
+nav.right {
+    grid-area: rightnav;
+    /*grid-area: 2 / 3 / 5 / 4;*/
+}
+
+main>header {
     grid-area: header;
 }
-body>main {
+main>article {
     grid-area: main;
 }
-body>footer {
+main>footer {
     grid-area: footer;
 }
 
@@ -47,7 +53,7 @@ nav ul {
     justify-content: space-between;
 }
 
-.side ul {
+.left ul, .right ul {
     flex-direction: column;
 }
 
@@ -55,11 +61,11 @@ nav ul {
 /*** Asthetics ***/
 
 /* Menu */
-nav.top, nav.side {
+nav.top, nav.left, nav.right {
     padding: 10px;    
 }
 
-nav.top a, nav.side a {
+nav.top a, nav.left a, nav.right a {
     text-decoration: none;
     color: #1950bf;
 }
@@ -68,11 +74,11 @@ nav.top {
     background-color:#ddd;    
     font-size: 25px;
 }
-nav.side {
+nav.left, nav.right {
     background-color:#ddd;    
     font-size: 18px;
 }
-nav.side li {
+nav.left li, nav.right li {
     padding: 5px 0;
 }
 

@@ -15,7 +15,8 @@
 
     /** fetchMarkdown 
      */
-    function fetchMarkdown(path, {routeAdapter: hrefToRouteAdapter}) { // path: string, options: object
+    function fetchMarkdown(path, options) { // path: string, options: object
+      options = options || {routeAdapter: hrefToRouteAdapter};
       // Custom Markdown Renderings
       var renderer = new marked.Renderer();
       renderer.heading = customHeadingRenderer;
@@ -51,7 +52,8 @@
         var mds = md.join('\n');
         var content = {
           frontMatter: YAML.parse(fms),
-          markup: marked.parse(mds, { renderer: renderer })
+          markup: marked.parse(mds, { renderer: renderer }),
+          markdown: mds
         }
         return content;
       }
@@ -89,7 +91,7 @@
 
       function customLinkRenderer(href, title, text) { // string, string, string
         if (!href.startsWith('http')) {
-          href = hrefToRouteAdapter(href);
+          href = options.routeAdapter(href);
         }
         if (this.options.sanitize) {
           try {
@@ -113,7 +115,7 @@
 
       function customImageRenderer(href, title, text) { // string, string, string
         if (!href.startsWith('http')) {
-          href = hrefToRouteAdapter(href);
+          href = options.routeAdapter(href);
         }
         var out = '<img src="' + href + '" alt="' + text + '"';
         if (title) {
@@ -122,6 +124,7 @@
         out += this.options.xhtml ? '/>' : '>';
         return out;
       }
+
     };
 
 
@@ -132,8 +135,9 @@
      * @returns
      */
     function hrefToRouteAdapter(href) {
-      return "#" + MdContent.routePath.replace(':mdFile*', href);
+      return "#" + MdContent.routePath.replace(':parentNav?','').replace(':mdFile*', href);
     }
+    
 
     /** MdContent - Component to load markdown as html
      */
@@ -210,12 +214,13 @@
       },
       props: ['theContent', 'header', 'footer'],
       template: `<main>
-      <nav v-for="item in allNavs"><section v-html="item.markup"></section></nav>
-      <header><h1>{{header.title}}</h1><p>{{header.summary}}</p></header>
+      <nav v-for="item in allNavs" :class="item.frontMatter.position"><section v-html="item.markup"></section></nav>
+      <header v-if="header"><h1>{{header.title}}</h1><p>{{header.summary}}</p></header>
     <article v-html="theContent" class="markdown-body"></article>
-    <footer><ul><li>Author: {{footer.author}}</li><li>Contributors: {{footer.contributors}}</li><li>Created On: {{footer.created}}</li><li>Modified On: {{footer.modified}}</ul></footer>
+    <footer v-if="footer"><ul><li>Author: {{footer.author}}</li><li>Contributors: {{footer.contributors}}</li><li>Created On: {{footer.created}}</li><li>Modified On: {{footer.modified}}</ul></footer>
   </main>`
-    })
+    });
+
     Vue.component('a-nav', {
       props: ['navContent', 'navMeta'],
       template: `<nav><section v-html="navContent"></section></nav>`
@@ -258,26 +263,35 @@
           .then(function (content) {
             store.commit('loadNavs',{ nav: content });
 
-            var __fm = app.frontMatter;
+            var __fm = content.frontMatter;
             console.log(__fm);
             if (__fm) {
-              // // el.classList.add($all.nav.position);
-              // var links = el.getElementsByTagName('a');
-              // for (var i = 0; i < links.length; i++) {
-              //   if (__fm.target === 'nav') {
-              //     // then there is a secondary set of navs to be loaded
-              //     var path = links[i].href.replace('#', '');
-              //     fetchMd(path)
-              //       .then(createElement('nav'))
-              //       .then(appendToBody())
-              //       .then(function (e) {
-              //         e.dataset.parentNav = path.replace($location.origin, '');
-              //       });
-              //     // links[i].addEventListener('click', showSubNav);
-              //   } else {
-              //     // links[i].addEventListener('click', doNavClick);
-              //   }
-              // }
+              // Process .target
+              el = document.createElement('div');
+              el.innerHTML = content.markup;
+              var links = el.getElementsByTagName('a');
+              for (var i = 0; i < links.length; i++) {
+                if (__fm.target === 'nav') {
+                  // then there is a secondary set of navs to be loaded
+                  var path = links[i].href.replace('#/vue/', '');
+                  fetchMarkdown(path, {
+                    routeAdapter: function (href) {
+                      return "#" + MdContent.routePath.replace(':parentNav?','').replace(':mdFile*', href);
+                    }
+                  })
+                    .then(function (nextContent) {
+                      store.commit('loadNavs',{ nav: nextContent });
+                    });
+                }
+              }
+              if(__fm.home) {
+                var hm = document.createElement('li');
+                hm.innerHTML = '<a href="#/vue/' + (__fm.home.url || 'README.md') + '">' + (__fm.home.text || 'Home') + '</a>';
+                var ul = el.getElementsByTagName('ul')[0];
+                ul.innerHTML = hm.outerHTML + ul.innerHTML;
+                console.log(el.innerHTML);
+                content.markup = el.innerHTML;
+              }
             }
             return content.markup;
           })
