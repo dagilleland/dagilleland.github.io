@@ -1,25 +1,31 @@
 (function () {
   window.addEventListener('load', function () {
     const store = new Vuex.Store({
-      state: {      // The root state object for the Vuex store.
+      state: {
         navs: []
       },
-      mutations: {  // 
-        // type: { [type: string]: Function }
-        loadNavs (state, payload) {
+      mutations: {
+        loadNavs(state, payload) {
           state.navs.push(payload.nav);
         }
       }
-      
-    })
+    });
 
     /** fetchMarkdown 
      */
-    function fetchMarkdown(path, options) { // path: string, options: object
-      options = options || {routeAdapter: hrefToRouteAdapter};
+    function fetchMarkdown(path, parseOptions) { // path: string, options: object
+      var defaults = {
+        routeAdapter: function (href) { throw 'routeAdapter not configured for setting links during markdown-to-html parsing'; },
+        renderer: {
+          heading: customHeadingRenderer,
+          link: customLinkRenderer,
+          image: customImageRenderer
+        }
+      }
+      var foptions = Object.assign({}, defaults, parseOptions);
       // Custom Markdown Renderings
       var renderer = new marked.Renderer();
-      renderer.heading = customHeadingRenderer;
+      renderer.heading = foptions.renderer.heading;
       renderer.link = customLinkRenderer;
       renderer.image = customImageRenderer;
 
@@ -91,7 +97,7 @@
 
       function customLinkRenderer(href, title, text) { // string, string, string
         if (!href.startsWith('http')) {
-          href = options.routeAdapter(href);
+          href = foptions.routeAdapter(href);
         }
         if (this.options.sanitize) {
           try {
@@ -114,9 +120,9 @@
       }
 
       function customImageRenderer(href, title, text) { // string, string, string
-        if (!href.startsWith('http')) {
-          href = options.routeAdapter(href);
-        }
+        // if (!href.startsWith('http')) {
+        //   href = foptions.routeAdapter(href);
+        // }
         var out = '<img src="' + href + '" alt="' + text + '"';
         if (title) {
           out += ' title="' + title + '"';
@@ -128,22 +134,14 @@
     };
 
 
-    /**
-     * hrefToRouteAdapter - convert a route adapter to 
-     * 
-     * @param {string} href
-     * @returns
-     */
-    function hrefToRouteAdapter(href) {
-      return "#" + MdContent.routePath.replace(':parentNav?','').replace(':mdFile*', href);
-    }
-    
-
     /** MdContent - Component to load markdown as html
      */
     const MdContent = {
       routeHomePath: '/',
-      routePath: ':parentNav?/vue/:mdFile*',
+      routePath: '/vue/:mdFile*',
+      routeLinkAdapter: function (href) {
+        return '#/vue/' + href;
+      },
       template: '<core-content :header="header" :footer="footer" :theContent="theContent"></core-content>',
       data: function () {
         return {
@@ -157,17 +155,19 @@
         }
       },
       computed: {
-        navs: function() {
+        navs: function () {
           return this.$store.state.navs;
         }
       },
       methods: {
         process: function (content) {
-          this.$data.theContent = content.markup;
-          this.$data.frontMatter = content.frontMatter;
-          if (content.frontMatter) {
-            this.$data.header = content.frontMatter.header;
-            this.$data.footer = content.frontMatter.footer;
+          if (content) {
+            this.$data.theContent = content.markup;
+            this.$data.frontMatter = content.frontMatter;
+            if (content.frontMatter) {
+              this.$data.header = content.frontMatter.header;
+              this.$data.footer = content.frontMatter.footer;
+            }
           }
         },
         fetchFile: function (toFile) {
@@ -176,7 +176,7 @@
           }
           var process = this.process;
           console.log(process);
-          fetchMarkdown(toFile).then(process);
+          fetchMarkdown(toFile, { routeAdapter: MdContent.routeLinkAdapter }).then(process);
         }
       },
       created() {
@@ -192,8 +192,6 @@
     };
 
     const routes = [
-      // dynamic segements start with a colon
-      // { path: '/tags/:tags', component: TagRouteComponent },
       { path: MdContent.routePath, component: MdContent },
       // TODO: Route for :parentNav
       { path: MdContent.routeHomePath, component: MdContent }
@@ -207,7 +205,7 @@
     Vue.use(VueRouter);
     // Vue.use(Vuex);
     Vue.component('core-content', {
-      data: function() {
+      data: function () {
         return {
           allNavs: store.state.navs
         }
@@ -234,69 +232,42 @@
         navDoc: 'nav.md',
         defaultDoc: 'README.md'
       },
-      methods: {
-        callback(contentHtml) {
-          // console.log('--- callback ---');
-          // console.log(contentHtml);
-          // console.log('--- end callback ---');
-          this.message = contentHtml;
-        },
-        routerlink(markup) {
-          var tmp = document.createElement('nav');
-          tmp.innerHTML = markup;
-          var links = tmp.getElementsByTagName('a');
-          // NOTE: Remove the following as prefexing not needed
-          // for (var link of links) {
-          //   link.href = link.href.replace('/posts', '/#/posts');
-          // }
-          return tmp.innerHTML;
-        }
-      },
       mounted: function () {
         this.navDoc = this.$el.dataset.nav;
         this.defaultDoc = this.$el.dataset.home;
-
-        //   // Load the navigation and the default document
-        // },
-        // created: function () {
-        fetchMarkdown(this.navDoc)
+        fetchMarkdown(this.navDoc, { routeAdapter: MdContent.routeLinkAdapter })
           .then(function (content) {
-            store.commit('loadNavs',{ nav: content });
+            if (content) {
+              store.commit('loadNavs', { nav: content });
 
-            var __fm = content.frontMatter;
-            console.log(__fm);
-            if (__fm) {
-              // Process .target
-              el = document.createElement('div');
-              el.innerHTML = content.markup;
-              var links = el.getElementsByTagName('a');
-              for (var i = 0; i < links.length; i++) {
-                if (__fm.target === 'nav') {
-                  // then there is a secondary set of navs to be loaded
-                  var path = links[i].href.replace('#/vue/', '');
-                  fetchMarkdown(path, {
-                    routeAdapter: function (href) {
-                      return "#" + MdContent.routePath.replace(':parentNav?','').replace(':mdFile*', href);
-                    }
-                  })
-                    .then(function (nextContent) {
-                      store.commit('loadNavs',{ nav: nextContent });
-                    });
+              var __fm = content.frontMatter;
+              console.log(__fm);
+              if (__fm) {
+                // Process .target
+                el = document.createElement('div');
+                el.innerHTML = content.markup;
+                var links = el.getElementsByTagName('a');
+                for (var i = 0; i < links.length; i++) {
+                  if (__fm.target === 'nav') {
+                    // then there is a secondary set of navs to be loaded
+                    var path = links[i].href.replace('#/vue/', '');
+                    fetchMarkdown(path, { routeAdapter: MdContent.routeLinkAdapter })
+                      .then(function (nextContent) {
+                        store.commit('loadNavs', { nav: nextContent });
+                      });
+                  }
+                }
+                if (__fm.home) {
+                  var hm = document.createElement('li');
+                  hm.innerHTML = '<a href="#/vue/' + (__fm.home.url || 'README.md') + '">' + (__fm.home.text || 'Home') + '</a>';
+                  var ul = el.getElementsByTagName('ul')[0];
+                  ul.innerHTML = hm.outerHTML + ul.innerHTML;
+                  console.log(el.innerHTML);
+                  content.markup = el.innerHTML;
                 }
               }
-              if(__fm.home) {
-                var hm = document.createElement('li');
-                hm.innerHTML = '<a href="#/vue/' + (__fm.home.url || 'README.md') + '">' + (__fm.home.text || 'Home') + '</a>';
-                var ul = el.getElementsByTagName('ul')[0];
-                ul.innerHTML = hm.outerHTML + ul.innerHTML;
-                console.log(el.innerHTML);
-                content.markup = el.innerHTML;
-              }
             }
-            return content.markup;
-          })
-          .then(this.routerlink)
-          .then(this.callback);
+          });
       }
     }).$mount('#app')
   });
