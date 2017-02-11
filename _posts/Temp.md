@@ -1,7 +1,9 @@
 ---
 title: Just a Temp file
-logs: [Learning Outcomes](../README.md)
+logs: ../README.md
+
 ---
+
 # This is a title
 
 lorem ipsum
