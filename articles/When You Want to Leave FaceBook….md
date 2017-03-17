@@ -1,0 +1,29 @@
+---
+Title: When You Want to Leave FaceBook…
+Created: 7/25/2009 7:38:20 AM
+Addendum: Republished from News Articles version
+Approved: False
+Draft: False
+---
+# When You Want to Leave FaceBook…
+
+---
+
+## When You Want to Leave FaceBook…
+<script type="text/javascript" src="/DesktopModules/itcMetaPost/js/ca0c21fbdc85f6a1597417732d450607.ashx?hs=1"></script>
+
+What do you do, when you want to leave [FaceBook](http://www.FaceBook.com)? Well, you have three choices:
+
+
+1. **Abandon** your [FaceBook](http://www.FaceBook.com) account – This choice is the easiest, and is often used by people who just grow disinterested in [FaceBook](http://www.FaceBook.com).        
+Leave it alone, don’t update it or check it. If it gets your interest again, you can come back to it.        
+This is akin to those abandoned vehicles you see in the countryside now and again. They are just cast aside, but sitting on and still part of the owner’s property.
+2. **Disable** your [FaceBook](http://www.FaceBook.com) account – This is like abandoning it, but with you going to extra work adjusting your settings on [FaceBook](http://www.FaceBook.com). Your account isn’t deleted, but it’s “gone”. You can reclaim it at a later time.
+3. **Delete** your [FaceBook](http://www.FaceBook.com) account – This goes is like disabling, but goes the extra step to permanently get rid of your data. It’s a harder option to find (see [this article](http://www.itbusiness.ca/it/client/en/home/News.asp?id=53975) by Brian Jackson).
+
+
+<script src="/DesktopModules/itcMetaPost/js/m.js" type="text/javascript"></script>
+
+
+---
+
