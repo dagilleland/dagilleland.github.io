@@ -1,4 +1,17 @@
-<pre xml:space="preserve">The Project Gutenberg EBook of A Tale of Two Cities, by Charles Dickens
+---
+title: A TALE OF TWO CITIES (Preface)
+---
+# A TALE OF TWO CITIES
+
+> A STORY OF THE FRENCH REVOLUTION
+> By Charles Dickens
+
+![0403m](./images/0403m.jpg)
+
+![0404m](./images/0404m.jpg)  
+
+```text
+The Project Gutenberg EBook of A Tale of Two Cities, by Charles Dickens
 
 This eBook is for the use of anyone anywhere at no cost and with
 almost no restrictions whatsoever.  You may copy it, give it away or
@@ -21,23 +34,4 @@ Character set encoding: UTF-8
 
 Produced by Judith Boss, and David Widger
 
-</pre>
-
-* * *
-
-# A TALE OF TWO CITIES
-
-## A STORY OF THE FRENCH REVOLUTION
-
-## By Charles Dickens
-
-<div class="fig" style="width:60%;">![0403m ](images/0403m.jpg)  
-</div>
-
-##### [_Original_](images/0403.jpg)
-
-<div class="fig" style="width:60%;">![0404m ](images/0404m.jpg)  
-</div>
-
-##### [_Original_](images/0404.jpg)
-
+```

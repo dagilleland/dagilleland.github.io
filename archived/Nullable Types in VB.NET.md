@@ -14,7 +14,7 @@ meta:
 ## Nullable Types in VB.NET
 
 I ran accross [this article](http://bartdesmet.net/blogs/bart/archive/2007/08/30/visual-basic-9-0-feature-focus-nullable-types.aspx) about nullable types in VB 9.0. Basically, there is now integrated syntax to denote a nullable type. For example:
-<font color="#0000ff">Dim<span class="Apple-converted-space">&#160;</span>age <font color="#0000ff">As Integer?
+<font color="#0000ff">Dim<span class="Apple-converted-space">&#160;age <font color="#0000ff">As Integer?
 You will then see that the variable **age** now has the property ***.HasValue*** that can be checked to see if the value is null or not. This has great potential for the whole issue about databases storing nulls and co-ordinating it with our OOP programming.
 
 
@@ -26,9 +26,9 @@ Here's another snippet from the article:
 > 
 > 
 > 
-> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;</span>a <font color="#0000ff">As Integer? = <font color="#0000ff">Nothing  
-> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;</span>b <font color="#0000ff">As Integer? = 123                 
-> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;</span>c <font color="#0000ff">As Integer? = a + b
+> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;a <font color="#0000ff">As Integer? = <font color="#0000ff">Nothing  
+> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;b <font color="#0000ff">As Integer? = 123                 
+> > <font color="#0000ff">Dim<span class="Apple-converted-space">&#160;c <font color="#0000ff">As Integer? = a + b
 > 
 > 
 > 

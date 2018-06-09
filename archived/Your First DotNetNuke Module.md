@@ -59,7 +59,7 @@ The first step will be to edit the resource file. This file contains a dictionar
 Next, edit the **ViewHelloUser.ascx** file to have the following markup. Note that we're just using a couple of labels and a ListView on this form – a nice, simple layout. The content for these controls will be provided in the code-behind of the file.
 
  
-<%@ Control language="C#" Inherits="HOT4DNN.Modules.HelloUser.ViewHelloUser" </span></p><p><span style="color: black; background-color: rgb(255, 255, 0);">    CodeFile="ViewHelloUser.ascx.cs" AutoEventWireup="true"%> 
+<%@ Control language="C#" Inherits="HOT4DNN.Modules.HelloUser.ViewHelloUser" </p><p><span style="color: black; background-color: rgb(255, 255, 0);">    CodeFile="ViewHelloUser.ascx.cs" AutoEventWireup="true"%> 
 
 
 
@@ -99,7 +99,7 @@ Next, edit the **ViewHelloUser.ascx** file to have the following markup. Note th
 
 
 
-            div><%</span># Container.DataItem <span style="color: black; background-color: rgb(255, 255, 0);">%>div>
+            div><%# Container.DataItem <span style="color: black; background-color: rgb(255, 255, 0);">%>div>
 
 
 

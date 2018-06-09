@@ -10,13 +10,6 @@ meta:
 ---
 # Alpha/Beta
 
----
-## Alpha/Beta
+**άλφα μετάφραση**
+**[alpha version]**
 
-
-**άλφα μετάφραση   
-[alpha version]**
-
-
-
----

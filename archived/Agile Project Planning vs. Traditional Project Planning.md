@@ -10,9 +10,6 @@ meta:
 ---
 # Agile Project Planning vs. Traditional Project Planning
 
----
-## Agile Project Planning vs. Traditional Project Planning
-
 
 I read an [article at ExtremePlanner.com](http://www.extremeplanner.com/articles/Agile-Project-Planning.html) that takes a look at traditional project planning and the tensions/problems inherent to that approach.
 

@@ -1,5 +1,5 @@
 ---
-Title: "Extreme" Programming
+Title: Extreme Programming
 meta:
   - name: addendum
     content: Republished from News Articles version

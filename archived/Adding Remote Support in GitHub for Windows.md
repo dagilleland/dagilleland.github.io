@@ -10,13 +10,7 @@ meta:
 ---
 # Adding Remote Support in GitHub for Windows
 
----
-## Adding Remote Support in GitHub for Windows
-
-
 Here's hoping that this "open letter" (blog post, actually) to [**Phil Haack**](http://haacked.com/) and the [**GitHub for Windows**](http://windows.github.com/) team isn't taken as being too pushy ….
-
- 
 
 ``</unabashedFlattery>``First, I gotta say that [GitHub for Windows](http://windows.github.com/) (GHfW) is making me a **huge fan** of both Git and [GitHub](https://github.com/)!!!</unabashedFlattery> As an instructor teaching computer programming to post-secondary students, tools like this are part of what make my job and my students' jobs *so* much easier!
 
@@ -26,7 +20,7 @@ What would make this tool the [Pièce de résistance](http://en.wikipedia.org/wi
 
  
 
-[![SNAGHTML423b4e79](images/010/10/10/SNAGHTML423b4e79_thumb.png "SNAGHTML423b4e79")](images/010/10/10/SNAGHTML423b4e79.png)
+[![SNAGHTML423b4e79](images/010/10/10/SNAGHTML423b4e79_thumb.png "SNAGHTML423b4e79")](./images/010/10/10/SNAGHTML423b4e79.png)
 
  
 
@@ -38,7 +32,7 @@ As it currently stands, GHfW lets the developer quickly see if their repository 
 
  
 
-Oh, and thanks (in advance). ![Smile](images/010/10/10/wlEmoticon-smile.png)
+Oh, and thanks (in advance). ![Smile](./images/010/10/10/wlEmoticon-smile.png)
 
  
 
