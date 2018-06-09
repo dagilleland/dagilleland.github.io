@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Laws of Logic
 description: "The basics of the Laws of Logic"
 ----

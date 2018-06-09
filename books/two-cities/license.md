@@ -5,8 +5,8 @@ PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
 
 To protect the Project Gutenberg-tm mission of promoting the free
 distribution of electronic works, by using or distributing this work
-(or any other work associated in any way with the phrase “Project
-Gutenberg”), you agree to comply with all the terms of the Full Project
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
 Gutenberg-tm License (available with this file or online at
 http://gutenberg.org/license).
 
@@ -24,7 +24,7 @@ Gutenberg-tm electronic work and you do not agree to be bound by the
 terms of this agreement, you may obtain a refund from the person or
 entity to whom you paid the fee as set forth in paragraph 1.E.8.
 
-1.B.  “Project Gutenberg” is a registered trademark.  It may only be
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
 used on or associated in any way with an electronic work by people who
 agree to be bound by the terms of this agreement.  There are a few
 things that you can do with most Project Gutenberg-tm electronic works
@@ -34,7 +34,7 @@ Gutenberg-tm electronic works if you follow the terms of this agreement
 and help preserve free future access to Project Gutenberg-tm electronic
 works.  See paragraph 1.E below.
 
-1.C.  The Project Gutenberg Literary Archive Foundation (“the Foundation”
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
  or PGLAF), owns a compilation copyright in the collection of Project
 Gutenberg-tm electronic works.  Nearly all the individual works in the
 collection are in the public domain in the United States.  If an
@@ -65,8 +65,8 @@ States.
 1.E.1\.  The following sentence, with active links to, or other immediate
 access to, the full Project Gutenberg-tm License must appear prominently
 whenever any copy of a Project Gutenberg-tm work (any work on which the
-phrase “Project Gutenberg” appears, or with which the phrase “Project
-Gutenberg” is associated) is accessed, displayed, performed, viewed,
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
 copied or distributed:
 
 This eBook is for the use of anyone anywhere at no cost and with
@@ -79,7 +79,7 @@ from the public domain (does not contain a notice indicating that it is
 posted with permission of the copyright holder), the work can be copied
 and distributed to anyone in the United States without paying any fees
 or charges.  If you are redistributing or providing access to a work
-with the phrase “Project Gutenberg” associated with or appearing on the
+with the phrase "Project Gutenberg" associated with or appearing on the
 work, you must comply either with the requirements of paragraphs 1.E.1
 through 1.E.7 or obtain permission for the use of the work and the
 Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
@@ -106,11 +106,11 @@ Gutenberg-tm License.
 compressed, marked up, nonproprietary or proprietary form, including any
 word processing or hypertext form.  However, if you provide access to or
 distribute copies of a Project Gutenberg-tm work in a format other than
-“Plain Vanilla ASCII” or other format used in the official version
+"Plain Vanilla ASCII" or other format used in the official version
 posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
 you must, at no additional cost, fee or expense to the user, provide a
 copy, a means of exporting a copy, or a means of obtaining a copy upon
-request, of the work in its original “Plain Vanilla ASCII” or other
+request, of the work in its original "Plain Vanilla ASCII" or other
 form.  Any alternate format must include the full Project Gutenberg-tm
 License as specified in paragraph 1.E.1.
 
@@ -132,8 +132,8 @@ that
      prepare (or are legally required to prepare) your periodic tax
      returns.  Royalty payments should be clearly marked as such and
      sent to the Project Gutenberg Literary Archive Foundation at the
-     address specified in Section 4, “Information about donations to
-     the Project Gutenberg Literary Archive Foundation.”
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
 
 - You provide a full refund of any money paid by a user who notifies
      you in writing (or by e-mail) within 30 days of receipt that s/he
@@ -165,14 +165,14 @@ effort to identify, do copyright research on, transcribe and proofread
 public domain works in creating the Project Gutenberg-tm
 collection.  Despite these efforts, Project Gutenberg-tm electronic
 works, and the medium on which they may be stored, may contain
-“Defects,” such as, but not limited to, incomplete, inaccurate or
+"Defects," such as, but not limited to, incomplete, inaccurate or
 corrupt data, transcription errors, a copyright or other intellectual
 property infringement, a defective or damaged disk or other medium, a
 computer virus, or computer codes that damage or cannot be read by
 your equipment.
 
-1.F.2\.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
-of Replacement or Refund” described in paragraph 1.F.3, the Project
+1.F.2\.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
 Gutenberg Literary Archive Foundation, the owner of the Project
 Gutenberg-tm trademark, and any other party distributing a Project
 Gutenberg-tm electronic work under this agreement, disclaim all
@@ -199,7 +199,7 @@ is also defective, you may demand a refund in writing without further
 opportunities to fix the problem.
 
 1.F.4\.  Except for the limited right of replacement or refund set forth
-in paragraph 1.F.3, this work is provided to you ‘AS-IS’ WITH NO OTHER
+in paragraph 1.F.3, this work is provided to you ‘AS-IS' WITH NO OTHER
 WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
 WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
 
@@ -231,7 +231,7 @@ because of the efforts of hundreds of volunteers and donations from
 people in all walks of life.
 
 Volunteers and financial support to provide volunteers with the
-assistance they need, are critical to reaching Project Gutenberg-tm’s
+assistance they need, are critical to reaching Project Gutenberg-tm's
 goals and ensuring that the Project Gutenberg-tm collection will
 remain freely available for generations to come.  In 2001, the Project
 Gutenberg Literary Archive Foundation was created to provide a secure
@@ -246,18 +246,18 @@ Foundation
 The Project Gutenberg Literary Archive Foundation is a non profit
 501(c)(3) educational corporation organized under the laws of the
 state of Mississippi and granted tax exempt status by the Internal
-Revenue Service.  The Foundation’s EIN or federal tax identification
+Revenue Service.  The Foundation's EIN or federal tax identification
 number is 64-6221541\.  Its 501(c)(3) letter is posted at
 http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
 Literary Archive Foundation are tax deductible to the full extent
-permitted by U.S. federal laws and your state’s laws.
+permitted by U.S. federal laws and your state's laws.
 
-The Foundation’s principal office is located at 4557 Melan Dr. S.
+The Foundation's principal office is located at 4557 Melan Dr. S.
 Fairbanks, AK, 99712., but its volunteers and employees are scattered
 throughout numerous locations.  Its business office is located at
 809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
 business@pglaf.org.  Email contact links and up to date contact
-information can be found at the Foundation’s web site and official
+information can be found at the Foundation's web site and official
 page at http://pglaf.org
 
 For additional contact information:

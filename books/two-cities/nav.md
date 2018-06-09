@@ -14,7 +14,7 @@
   1. [Hundreds of People](ch2-06.md)
   1. [Monseigneur in Town](ch2-07.md)
   1. [Monseigneur in the Country](ch2-08.md)
-  1. [The Gorgon’s Head](ch2-09.md)
+  1. [The Gorgon's Head](ch2-09.md)
   1. [Two Promises](ch2-10.md)
   1. [A Companion Picture](ch2-11.md)
   1. [The Fellow of Delicacy](ch2-12.md)

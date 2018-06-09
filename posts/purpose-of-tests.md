@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Purposes of Unit Testing
 description: "Some high-level thoughts on Unit Testing."
 ---

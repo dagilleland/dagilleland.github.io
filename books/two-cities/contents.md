@@ -34,7 +34,7 @@
 >   
 > [VIII.](#link2H_4_0016)   Monseigneur in the Country  
 >   
-> [IX.](#link2H_4_0017)   The Gorgon’s Head  
+> [IX.](#link2H_4_0017)   The Gorgon's Head  
 >   
 > [X.](#link2H_4_0018)   Two Promises  
 >   

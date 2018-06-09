@@ -1,3 +1,0 @@
-# Splash Page
-
-TBA
