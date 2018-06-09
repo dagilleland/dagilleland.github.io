@@ -1,14 +1,16 @@
 ---
 Title: PluralSight Videos
-Created: 11/2/2009 12:00:22 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # PluralSight Videos
 
 ---
-
 ## PluralSight Videos
 
 
@@ -29,4 +31,3 @@ Well, that's my first quick look at their sight. You might find it interesting t
 
 
 ---
-

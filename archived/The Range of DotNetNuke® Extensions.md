@@ -1,14 +1,16 @@
 ---
 Title: The Range of DotNetNuke® Extensions
-Created: 8/12/2013 3:41:08 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # The Range of DotNetNuke® Extensions
 
 ---
-
 ## The Range of DotNetNuke® Extensions
 
 # TODO: Add TODO Comments
@@ -384,4 +386,3 @@ Lastly, the control must end with the short-form closing tag (" />"). If the par
 
 
 ---
-

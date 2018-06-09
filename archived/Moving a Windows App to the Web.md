@@ -1,9 +1,12 @@
 ---
 Title: Moving a Windows App to the Web
-Created: 6/18/2009 11:08:18 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Moving a Windows App to the Web
 
@@ -14,7 +17,6 @@ This article looks at the main steps to convert a simple Windows application int
 
 
 ---
-
 ## Moving a Windows App to the Web
 
 ## Abstract
@@ -58,4 +60,3 @@ Code-wise, there is really very little that changes between these two apps. Here
 
 
 ---
-

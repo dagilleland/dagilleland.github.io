@@ -1,14 +1,16 @@
 ---
 Title: DNN Tree Menu Research
-Created: 7/30/2010 2:44:10 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # DNN Tree Menu Research
 
 ---
-
 ## DNN Tree Menu Research
 
 
@@ -77,4 +79,3 @@ Draft: False
 
 
 ---
-

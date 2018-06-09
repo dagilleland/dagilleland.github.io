@@ -1,9 +1,7 @@
 ---
-
 title: Laws of Logic
 description: "The basics of the Laws of Logic"
 ----
-
 Laws of Logic: source - https://school.carm.org/amember/files/demo3/2_logic/3logic.htm
 
   - The Law of Identity

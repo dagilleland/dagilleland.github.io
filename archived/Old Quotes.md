@@ -1,14 +1,16 @@
 ---
 Title: Old Quotes
-Created: 8/15/2009 7:19:56 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Old Quotes
 
 ---
-
 ## Old Quotes
 
 
@@ -59,4 +61,3 @@ I was going through a bunch of items from years past (before the Internet!), and
 
 
 ---
-

@@ -1,9 +1,12 @@
 ---
 Title: Lipsum Demo
-Created: 6/19/2009 7:19:38 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Lipsum Demo
 
@@ -24,7 +27,6 @@ For more Lorem Ipsum content, check out
 
 
 ---
-
 ## Lipsum Demo
 
 # [HTML Ipsum](http://html-ipsum.com/) Presents
@@ -86,9 +88,7 @@ For more Lorem Ipsum content, check out
 
 ---
 
-
 ---
-
 ## Lipsum - Page 2
 
 ## More Lorem Ipsum
@@ -121,4 +121,3 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 
 ---
-

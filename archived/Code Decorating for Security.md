@@ -1,14 +1,16 @@
 ---
 Title: Code Decorating for Security
-Created: 9/6/2009 3:02:24 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Code Decorating for Security
 
 ---
-
 ## Code Decorating for Security
 
 
@@ -23,4 +25,3 @@ I also bought a book (Hacking the Code) about building security into your web ap
 
 
 ---
-

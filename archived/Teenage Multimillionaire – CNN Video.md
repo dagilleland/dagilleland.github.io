@@ -1,14 +1,16 @@
 ---
 Title: Teenage Multimillionaire – CNN Video
-Created: 8/23/2009 11:41:32 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Teenage Multimillionaire – CNN Video
 
 ---
-
 ## Teenage Multimillionaire – CNN Video
 
 
@@ -26,4 +28,3 @@ Here's a great CNN interview with Ephren Taylor, a teen who made his first busin
 
 
 ---
-

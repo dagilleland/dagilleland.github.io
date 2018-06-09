@@ -1,14 +1,16 @@
 ---
 Title: My Development Virtual Machine
-Created: 6/26/2009 8:31:56 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # My Development Virtual Machine
 
 ---
-
 ## My Development Virtual Machine
 
 
@@ -61,4 +63,3 @@ My overall approach is to use differencing disks, which allows me to have a base
 
 
 ---
-

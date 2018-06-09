@@ -1,14 +1,16 @@
 ---
 Title: Building a Business Controller Class
-Created: 8/12/2013 3:33:40 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Building a Business Controller Class
 
 ---
-
 ## Building a Business Controller Class
 
 
@@ -54,4 +56,3 @@ ISearchable is an optional interface (from the DotNetNuke.Entities.Modules) whic
 
 
 ---
-

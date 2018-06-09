@@ -1,14 +1,16 @@
 ---
 Title: Sesame Street Turns 40
-Created: 11/4/2009 6:00:53 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Sesame Street Turns 40
 
 ---
-
 ## Sesame Street Turns 40
 
 
@@ -46,4 +48,3 @@ Google often puts up special logos on their search page to commemorate events an
 
 
 ---
-

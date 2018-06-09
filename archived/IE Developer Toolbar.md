@@ -1,14 +1,16 @@
 ---
 Title: IE Developer Toolbar
-Created: 6/27/2009 1:34:03 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # IE Developer Toolbar
 If you're involved in developing web sites or Web Applications in any way, then it's a good idea to get the IE Developer Toolbar. You get quite a lot of information on a page you browse. Here's a screen-shot.    There are a lot of great tools & features hidden in those menu items, like the ruler under the Tools menu (see image below).    This allows you to actually see measurements of stuff on your screen, like this:    This is definitely a good tool to use. I'll be exploring it more as time goes on....
 ---
-
 ## IE Developer Toolbar
 
 
@@ -43,4 +45,3 @@ This is definitely a good tool to use. I'll be exploring it more as time goes on
 
 
 ---
-

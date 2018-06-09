@@ -1,14 +1,16 @@
 ---
 Title: Virtualization Planning (for end-users)
-Created: 8/23/2010 8:03:05 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Virtualization Planning (for end-users)
 
 ---
-
 ## Virtualization Planning (for end-users)
 
 
@@ -29,4 +31,3 @@ Plan:
 
 
 ---
-

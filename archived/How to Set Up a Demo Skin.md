@@ -1,14 +1,16 @@
 ---
 Title: How to Set Up a Demo Skin
-Created: 8/12/2013 3:50:42 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # How to Set Up a Demo Skin
 
 ---
-
 ## How to Set Up a Demo Skin
 
 
@@ -33,4 +35,3 @@ Now the page can be viewed with your demo skin. If you wish, you can then fill t
 
 
 ---
-

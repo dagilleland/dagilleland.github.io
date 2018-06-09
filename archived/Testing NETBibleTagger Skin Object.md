@@ -1,14 +1,16 @@
 ---
 Title: Testing NETBibleTagger Skin Object
-Created: 7/9/2010 1:04:56 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Testing NETBibleTagger Skin Object
 
 ---
-
 ## Testing NETBibleTagger Skin Object
 
 
@@ -57,4 +59,3 @@ And, from the release notes:
 
 
 ---
-

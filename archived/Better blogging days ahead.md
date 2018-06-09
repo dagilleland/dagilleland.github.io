@@ -1,14 +1,16 @@
 ---
 Title: Better blogging days ahead
-Created: 9/6/2009 3:12:51 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Better blogging days ahead
 
 ---
-
 ## Better blogging days ahead
 
 
@@ -23,4 +25,3 @@ Once this big project is done, I hope to have some "time off" to rest, do my per
 
 
 ---
-

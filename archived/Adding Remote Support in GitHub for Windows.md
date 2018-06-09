@@ -1,14 +1,16 @@
 ---
 Title: Adding Remote Support in GitHub for Windows
-Created: 9/27/2013 5:33:29 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Adding Remote Support in GitHub for Windows
 
 ---
-
 ## Adding Remote Support in GitHub for Windows
 
 
@@ -16,7 +18,7 @@ Here's hoping that this "open letter" (blog post, actually) to [**Phil Haack**](
 
  
 
-<unabashedFlattery>First, I gotta say that [GitHub for Windows](http://windows.github.com/) (GHfW) is making me a **huge fan** of both Git and [GitHub](https://github.com/)!!!</unabashedFlattery> As an instructor teaching computer programming to post-secondary students, tools like this are part of what make my job and my students' jobs *so* much easier!
+``</unabashedFlattery>``First, I gotta say that [GitHub for Windows](http://windows.github.com/) (GHfW) is making me a **huge fan** of both Git and [GitHub](https://github.com/)!!!</unabashedFlattery> As an instructor teaching computer programming to post-secondary students, tools like this are part of what make my job and my students' jobs *so* much easier!
 
  
 
@@ -45,4 +47,3 @@ Cross-posted between [my personal blog](http://kb.gilleland.info/) and [my staff
 
 
 ---
-

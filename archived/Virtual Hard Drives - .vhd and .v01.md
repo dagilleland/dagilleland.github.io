@@ -1,14 +1,16 @@
 ---
 Title: Virtual Hard Drives - .vhd and .v01
-Created: 6/26/2009 8:42:25 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Virtual Hard Drives - .vhd and .v01
 
 ---
-
 ## Virtual Hard Drives - .vhd and .v01
 
 
@@ -68,4 +70,3 @@ I immediately notified Ben Armstrong of my findings and in his reply he said he 
 
 
 ---
-

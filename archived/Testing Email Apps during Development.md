@@ -1,14 +1,16 @@
 ---
 Title: Testing Email Apps during Development
-Created: 6/26/2009 2:17:32 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Testing Email Apps during Development
 
 ---
-
 ## Testing Email Apps during Development
 
 
@@ -23,4 +25,3 @@ Here's a good [article/resource](http://weblogs.asp.net/dfindley/archive/2006/04
 
 
 ---
-

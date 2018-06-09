@@ -1,14 +1,16 @@
 ---
 Title: Simple Assembly Signing  and InternalsVisibleTo
-Created: 10/5/2010 1:06:14 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Simple Assembly Signing  and InternalsVisibleTo
 
 ---
-
 ## Simple Assembly Signing  and InternalsVisibleTo
 
 
@@ -62,4 +64,3 @@ Bibliography:
 
 
 ---
-

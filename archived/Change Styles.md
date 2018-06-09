@@ -1,14 +1,16 @@
 ---
 Title: Change Styles
-Created: 8/18/2009 6:29:31 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Change Styles
 
 ---
-
 ## Change Styles
 
 
@@ -51,4 +53,3 @@ In fact, the best thing to be aware of is one's own tendency in how they *react*
 
 
 ---
-

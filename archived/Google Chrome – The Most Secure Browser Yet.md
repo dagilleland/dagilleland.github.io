@@ -1,14 +1,16 @@
 ---
 Title: Google Chrome – The Most Secure Browser Yet
-Created: 3/27/2010 3:16:31 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Google Chrome – The Most Secure Browser Yet
 
 ---
-
 ## Google Chrome – The Most Secure Browser Yet
 
 
@@ -27,4 +29,3 @@ So, you might be asking, "Why is Chrome so much more secure than any other brows
 
 
 ---
-

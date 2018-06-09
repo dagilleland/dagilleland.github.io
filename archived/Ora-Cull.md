@@ -1,14 +1,16 @@
 ---
 Title: Ora-Cull
-Created: 9/6/2009 2:35:30 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Ora-Cull
 
 ---
-
 ## Ora-Cull
 
 
@@ -23,4 +25,3 @@ One place that is good to look at is [dbmotive's oracle error lookup page](http:
 
 
 ---
-

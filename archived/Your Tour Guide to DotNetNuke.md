@@ -1,9 +1,12 @@
 ---
 Title: Your Tour Guide to DotNetNuke
-Created: 10/2/2007 6:42:43 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Your Tour Guide to DotNetNuke
 
@@ -36,7 +39,6 @@ This article covers the following topics. Each topic is addressed to a particula
 
 
 ---
-
 ## An Introduction to DotNetNuke
 
 # Overview
@@ -86,9 +88,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Page Basics
 
 ## Page Basics
@@ -106,9 +106,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Module Basics
 
 ## Module Basics
@@ -126,9 +124,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Website Administration Basics
 
 ## Website Administration Basics
@@ -150,9 +146,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Website Administration - Skins & Containers
 
 ## Website Administration - Skins & Containers
@@ -170,9 +164,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Text/HTML
 
 ## Using the Text/HTML Module
@@ -190,9 +182,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Announcements
 
 ## Using the Announcements Module
@@ -210,9 +200,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Links
 
 ## Using the Links Module
@@ -230,9 +218,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Documents
 
 ## Using the Documents Module
@@ -250,9 +236,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Events
 
 ## Using the Events Module
@@ -270,9 +254,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Contact List
 
 ## Using the Contact List Module
@@ -290,9 +272,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Gallery
 
 ## Using the Gallery Module
@@ -310,9 +290,7 @@ An Introduction to DotNetNuke
 
 ---
 
-
 ---
-
 ## Common Modules - Forum
 
 ## Using the Forum Module
@@ -329,4 +307,3 @@ An Introduction to DotNetNuke
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Women in Ministy
-Created: 8/15/2009 8:43:50 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Women in Ministy
 
 ---
-
 ## Women in Ministy
 
 
@@ -23,4 +25,3 @@ I wrote a similar paper for Bible School back in the early ‘90s. It's in paper
 
 
 ---
-

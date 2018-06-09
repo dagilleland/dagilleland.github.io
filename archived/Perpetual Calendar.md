@@ -1,14 +1,16 @@
 ---
 Title: Perpetual Calendar
-Created: 7/2/2009 12:45:30 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Perpetual Calendar
 
 ---
-
 ## Perpetual Calendar
 
 
@@ -19,4 +21,3 @@ Draft: False
 
 
 ---
-

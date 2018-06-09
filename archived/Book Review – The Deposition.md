@@ -1,14 +1,16 @@
 ---
 Title: Book Review – The Deposition
-Created: 7/22/2009 11:20:43 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Book Review – The Deposition
 
 ---
-
 ## Book Review – The Deposition
 
 |   
@@ -65,4 +67,3 @@ A deposition is a "Sworn testimony recorded for use in court at a later date." (
 
 
 ---
-

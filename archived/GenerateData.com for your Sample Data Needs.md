@@ -1,14 +1,16 @@
 ---
 Title: GenerateData.com for your Sample Data Needs
-Created: 11/13/2009 10:47:16 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # GenerateData.com for your Sample Data Needs
 
 ---
-
 ## GenerateData.com for your Sample Data Needs
 
 
@@ -27,4 +29,3 @@ Now, all I need is the time to dive in and modify it. Eventually….
 
 
 ---
-

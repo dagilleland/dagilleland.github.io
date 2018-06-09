@@ -1,14 +1,16 @@
 ---
 Title: Some Windows Live Writer Plug-Ins
-Created: 6/26/2009 8:23:58 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Some Windows Live Writer Plug-Ins
 
 ---
-
 ## Some Windows Live Writer Plug-Ins
 
 
@@ -92,4 +94,3 @@ For some reason, [Insert Google Maps](http://gallery.live.com/liveItemDetail.asp
 
 
 ---
-

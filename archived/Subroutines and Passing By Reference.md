@@ -1,9 +1,12 @@
 ---
 Title: Subroutines and Passing By Reference
-Created: 6/18/2009 11:28:33 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Subroutines and Passing By Reference
 
@@ -20,7 +23,6 @@ Upon successful completion of this lesson the student should be able to:
 
 
 ---
-
 ## Subroutines and Passing By Reference
 
 ## Subroutines and Passing by Reference
@@ -291,4 +293,3 @@ Subroutines are an efficient and maintainable way to flowchart repetitious logic
 
 
 ---
-

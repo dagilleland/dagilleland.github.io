@@ -1,14 +1,16 @@
 ---
 Title: Checklist for Creating Web Controls
-Created: 6/18/2009 11:47:57 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Checklist for Creating Web Controls
 
 ---
-
 ## Checklist for Creating Web Controls
 
 
@@ -23,4 +25,3 @@ Custom controls offer the best in re-usability among various projects, and creat
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Centralizing My Notes
-Created: 6/17/2009 8:18:19 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Centralizing My Notes
 
 ---
-
 ## Centralizing My Notes
 
 
@@ -19,4 +21,3 @@ For quite a while now, I've wanted to have a central place that I can keep my ar
 
 
 ---
-

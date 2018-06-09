@@ -1,14 +1,16 @@
 ---
 Title: Finally! metaPost :)
-Created: 9/6/2009 2:00:01 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Finally! metaPost :)
 
 ---
-
 ## Finally! metaPost :)
 
 
@@ -79,4 +81,3 @@ I'll probably write a bit more about [metaPost](http://www.itcrossing.com) as I 
 
 
 ---
-

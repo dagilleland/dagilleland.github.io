@@ -1,14 +1,16 @@
 ---
 Title: ASchool Project
-Created: 10/1/2013 12:18:01 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # ASchool Project
 
 ---
-
 ## ASchool Project
 
 
@@ -71,4 +73,3 @@ RnD:
 
 
 ---
-

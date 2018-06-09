@@ -1,14 +1,16 @@
 ---
 Title: Hand-Rolling DAL Code
-Created: 10/28/2009 7:20:00 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Hand-Rolling DAL Code
 
 ---
-
 ## Hand-Rolling DAL Code
 
 
@@ -81,4 +83,3 @@ And that's all. Now, I've got it blogged & I (or you) can refer to it again when
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Stuff I Gotta Try
-Created: 5/27/2010 8:49:23 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Stuff I Gotta Try
 
 ---
-
 ## Stuff I Gotta Try
 
 
@@ -50,4 +52,3 @@ That's all for now.
 
 
 ---
-

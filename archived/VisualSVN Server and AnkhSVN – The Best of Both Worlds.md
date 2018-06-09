@@ -1,14 +1,16 @@
 ---
 Title: VisualSVN Server and AnkhSVN – The Best of Both Worlds
-Created: 6/26/2009 2:24:08 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # VisualSVN Server and AnkhSVN – The Best of Both Worlds
 
 ---
-
 ## VisualSVN Server and AnkhSVN – The Best of Both Worlds
 
 
@@ -52,4 +54,3 @@ From their own pages, they state:
 
 
 ---
-

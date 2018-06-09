@@ -1,14 +1,16 @@
 ---
 Title: More Reads to Start 2009
-Created: 6/26/2009 2:51:30 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # More Reads to Start 2009
 
 ---
-
 ## More Reads to Start 2009
 
 Here are a list of good reads to start out 2009:
@@ -22,4 +24,3 @@ Here are a list of good reads to start out 2009:
 
 
 ---
-

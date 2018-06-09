@@ -1,14 +1,16 @@
 ---
 Title: DNN Educational Modules
-Created: 9/6/2009 3:24:33 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # DNN Educational Modules
 
 ---
-
 ## DNN Educational Modules
 
 
@@ -23,4 +25,3 @@ So, for now, the best place to start is with making some requirements for these 
 
 
 ---
-

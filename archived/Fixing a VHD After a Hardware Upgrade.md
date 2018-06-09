@@ -1,14 +1,16 @@
 ---
 Title: Fixing a VHD After a Hardware Upgrade
-Created: 6/5/2013 11:45:18 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Fixing a VHD After a Hardware Upgrade
 
 ---
-
 ## Fixing a VHD After a Hardware Upgrade
 
 
@@ -48,4 +50,3 @@ Things to mention:
 
 
 ---
-

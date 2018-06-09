@@ -1,14 +1,16 @@
 ---
 Title: Using HOT4DNN Tutorial Starter Kits
-Created: 8/12/2013 3:31:07 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Using HOT4DNN Tutorial Starter Kits
 
 ---
-
 ## Using HOT4DNN Tutorial Starter Kits
 
 
@@ -21,4 +23,3 @@ TBA:
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Fix Your FaceBook Privacy Settings
-Created: 5/18/2010 9:37:43 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Fix Your FaceBook Privacy Settings
 
 ---
-
 ## Fix Your FaceBook Privacy Settings
 
 
@@ -43,4 +45,3 @@ I first heard about it at [CNN Online](http://www.cnn.com/video/data/2.0/video/b
 
 
 ---
-

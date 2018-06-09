@@ -1,9 +1,12 @@
 ---
 Title: C# and VB.Net Tutorials by Mike Kitchen
-Created: 10/16/2009 11:10:40 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # C# and VB.Net Tutorials by Mike Kitchen
 
@@ -12,7 +15,6 @@ If you're looking for a good tutorial to learn C# or VB.Net, then I would recomm
 
 
 ---
-
 ## C# and VB.Net Tutorials by Mike Kitchen
 
 
@@ -46,4 +48,3 @@ I've been impressed with the amount he has written in his tutorials, but it seem
 
 
 ---
-

@@ -1,9 +1,12 @@
 ---
 Title: Skinning DNN - Tips & Tricks
-Created: 6/18/2009 11:02:53 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Skinning DNN - Tips & Tricks
 
@@ -16,7 +19,6 @@ This article highlights some tips, tricks, and patterns to creating Skins and Co
 
 
 ---
-
 ## Skinning DNN - Tips & Tricks
 
 ## A Planned Approach to Skinning
@@ -65,4 +67,3 @@ I use Edit Plus' ClipText feature to hold common code snippets. I have six key c
 
 
 ---
-

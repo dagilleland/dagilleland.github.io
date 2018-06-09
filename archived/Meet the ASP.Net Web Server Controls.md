@@ -1,9 +1,12 @@
 ---
 Title: Meet the ASP.Net Web Server Controls
-Created: 9/24/2012 8:40:46 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Meet the ASP.Net Web Server Controls
 
@@ -16,7 +19,6 @@ Visual Studio allows website developers to quickly create highly functional webs
 
 
 ---
-
 ## Meet the ASP.Net Web Server Controls
 
 
@@ -104,4 +106,3 @@ Visual Studio allows website developers to quickly create highly functional webs
 
 
 ---
-

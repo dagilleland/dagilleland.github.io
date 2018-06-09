@@ -1,14 +1,16 @@
 ---
 Title: Meet Us for Canada Day
-Created: 6/29/2009 3:09:02 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Meet Us for Canada Day
 
 ---
-
 ## Meet Us for Canada Day
 
 
@@ -37,4 +39,3 @@ Here's a satellite map of the spot where we'll be watching the parade.
 
 
 ---
-

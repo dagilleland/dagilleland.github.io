@@ -1,14 +1,16 @@
 ---
 Title: UserController.GetUsersByProfileProperty() - (DNN 3/4.3.4 +)
-Created: 9/6/2009 3:13:54 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # UserController.GetUsersByProfileProperty() - (DNN 3/4.3.4 +)
 
 ---
-
 ## UserController.GetUsersByProfileProperty() - (DNN 3/4.3.4 +)
 
 
@@ -41,4 +43,3 @@ Well, this is just another tidbit in learning about DNN's inner workings. Bye!
 
 
 ---
-

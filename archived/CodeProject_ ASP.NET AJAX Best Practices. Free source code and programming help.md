@@ -1,14 +1,16 @@
 ---
-Title: CodeProject: ASP.NET AJAX Best Practices. Free source code and programming help
-Created: 6/27/2009 2:22:23 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+Title: CodeProject - ASP.NET AJAX Best Practices. Free source code and programming help
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # CodeProject: ASP.NET AJAX Best Practices. Free source code and programming help
 Good article on some best practices for AJAX (specifically the JavaScript part of AJAX). It's worth the read!   CodeProject: ASP.NET AJAX Best Practices. Free source code and programming help
 ---
-
 ## CodeProject: ASP.NET AJAX Best Practices. Free source code and programming help
 
 
@@ -23,4 +25,3 @@ Good article on some best practices for AJAX (specifically the JavaScript part o
 
 
 ---
-

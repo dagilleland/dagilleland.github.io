@@ -1,14 +1,16 @@
 ---
 Title: A Holy Experience (.com)
-Created: 11/6/2009 8:33:06 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # A Holy Experience (.com)
 
 ---
-
 ## A Holy Experience (.com)
 
 
@@ -27,4 +29,3 @@ So, go over there. Sit a spell, and let the music, the images, and the words was
 
 
 ---
-

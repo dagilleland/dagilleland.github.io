@@ -1,14 +1,16 @@
 ---
 Title: Improving Vista Performance
-Created: 6/27/2009 5:37:11 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Improving Vista Performance
 I just checked out an article on tips to improve Vista performance. Now, most of these tips I already knew about, but one tip caught my eye and prompted this blog: ReadyBoost.  It appears that ReadyBoost is a way to use the Flash drive memory from a memory stick to support the OS's memory swapping. Quoting the article, "Microsoft estimates that you can benefit from a ReadyBoost cache equal to approximately 150 percent of your system RAM—for example, a 1.5 GB ReadyBoost cache on a 1 GB system." So, is you've got 2GB RAM already, you can use about 3GB of the flash drive for ReadyBoost caching. Cool!
 ---
-
 ## Improving Vista Performance
 
 
@@ -23,4 +25,3 @@ It appears that **ReadyBoost** is a way to use the Flash drive memory from a mem
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Blurbs and Video...
-Created: 9/6/2009 2:26:17 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Blurbs and Video...
 
 ---
-
 ## Blurbs and Video...
 
 
@@ -23,4 +25,3 @@ The first allows a way to get your book printed (from 1 to x copies) at very goo
 
 
 ---
-

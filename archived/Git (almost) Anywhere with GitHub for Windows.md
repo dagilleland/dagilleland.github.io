@@ -1,14 +1,16 @@
 ---
 Title: Git (almost) Anywhere with GitHub for Windows
-Created: 9/22/2013 7:40:41 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Git (almost) Anywhere with GitHub for Windows
 
 ---
-
 ## Git (almost) Anywhere with GitHub for Windows
 
 
@@ -33,4 +35,3 @@ Cross-posted between [my personal blog](http://kb.gilleland.info/) and [my work 
 
 
 ---
-

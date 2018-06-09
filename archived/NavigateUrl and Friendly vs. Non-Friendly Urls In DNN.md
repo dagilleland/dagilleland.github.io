@@ -1,14 +1,16 @@
 ---
 Title: NavigateUrl and Friendly vs. Non-Friendly Urls In DNN
-Created: 9/6/2009 2:59:03 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # NavigateUrl and Friendly vs. Non-Friendly Urls In DNN
 
 ---
-
 ## NavigateUrl and Friendly vs. Non-Friendly Urls In DNN
 
 
@@ -19,4 +21,3 @@ The host settings in DotNetNuke has an option for Friendly Urls (where query str
 
 
 ---
-

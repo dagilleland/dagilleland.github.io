@@ -1,14 +1,16 @@
 ---
 Title: When You Want to Leave FaceBook…
-Created: 7/25/2009 7:38:20 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # When You Want to Leave FaceBook…
 
 ---
-
 ## When You Want to Leave FaceBook…
 
 
@@ -26,4 +28,3 @@ This is akin to those abandoned vehicles you see in the countryside now and agai
 
 
 ---
-

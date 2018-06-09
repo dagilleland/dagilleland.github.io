@@ -1,14 +1,16 @@
 ---
 Title: Four Principles for True Technology Integration
-Created: 9/6/2009 3:32:57 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Four Principles for True Technology Integration
 
 ---
-
 ## Four Principles for True Technology Integration
 
 
@@ -29,4 +31,3 @@ It's a worth-while read for all educators using IT.
 
 
 ---
-

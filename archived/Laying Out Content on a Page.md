@@ -1,9 +1,12 @@
 ---
 Title: Laying Out Content on a Page
-Created: 10/22/2007 2:56:44 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Laying Out Content on a Page
 
@@ -12,7 +15,6 @@ Changing layout on a page is largely a matter of moving content modules around o
 
 
 ---
-
 ## Laying Out Content on a Page
 
 
@@ -71,4 +73,3 @@ The pictures below show the original layout and the modified layout after comple
 
 
 ---
-

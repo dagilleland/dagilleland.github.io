@@ -1,14 +1,16 @@
 ---
 Title: Ventrian's News Articles
-Created: 6/25/2009 10:12:29 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Ventrian's News Articles
 
 ---
-
 ## Ventrian's News Articles
 
 
@@ -60,4 +62,3 @@ I've been using this News Articles module for years now, and I have to say it is
 
 
 ---
-

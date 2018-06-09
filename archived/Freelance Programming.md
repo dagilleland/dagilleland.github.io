@@ -1,14 +1,16 @@
 ---
 Title: Freelance Programming
-Created: 7/2/2009 2:33:29 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Freelance Programming
 
 ---
-
 ## Freelance Programming
 
 ## Going Freelance…
@@ -30,4 +32,3 @@ If you're looking at doing a bit of freelance programming work, then here's a li
 
 
 ---
-

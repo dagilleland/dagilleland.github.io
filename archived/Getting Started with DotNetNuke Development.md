@@ -1,14 +1,16 @@
 ---
 Title: Getting Started with DotNetNuke Development
-Created: 8/12/2013 3:30:07 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Getting Started with DotNetNuke Development
 
 ---
-
 ## Getting Started with DotNetNuke Development
 
 
@@ -17,4 +19,3 @@ TBA
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Tectonic Plates
-Created: 6/27/2009 9:14:53 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Tectonic Plates
 Every once in a while I like to go to Discovery Channel Online and view some of the various shows. This was a neat show about our Earth's tectonic activity, and I thought I would mention it briefly in my blog (if only so I remember the link :).
 ---
-
 ## Tectonic Plates
 
 
@@ -19,4 +21,3 @@ Every once in a while I like to go to [Discovery Channel Online](http://www.disc
 
 
 ---
-

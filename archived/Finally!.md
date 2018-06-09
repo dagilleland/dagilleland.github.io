@@ -1,14 +1,16 @@
 ---
 Title: Finally!
-Created: 9/6/2009 3:22:50 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Finally!
 
 ---
-
 ## Finally!
 
 
@@ -35,4 +37,3 @@ I guess I'll get into the virtual machine approach to, just because I know that 
 
 
 ---
-

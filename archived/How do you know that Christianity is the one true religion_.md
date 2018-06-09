@@ -1,14 +1,16 @@
 ---
 Title: How do you know that Christianity is the one true religion?
-Created: 7/8/2012 1:17:49 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # How do you know that Christianity is the one true religion?
 
 ---
-
 ## How do you know that Christianity the the one true religion?
 
 
@@ -41,4 +43,3 @@ All worldviews can be grouped under only three categories
 
 
 ---
-

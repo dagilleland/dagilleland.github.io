@@ -1,14 +1,16 @@
 ---
 Title: De-Crappify Your Computer
-Created: 6/26/2009 8:08:43 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # De-Crappify Your Computer
 
 ---
-
 ## De-Crappify Your Computer
 
 
@@ -23,4 +25,3 @@ Draft: False
 
 
 ---
-

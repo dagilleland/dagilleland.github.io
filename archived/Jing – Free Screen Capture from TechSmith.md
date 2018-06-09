@@ -1,14 +1,16 @@
 ---
 Title: Jing – Free Screen Capture from TechSmith
-Created: 6/26/2009 8:21:25 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Jing – Free Screen Capture from TechSmith
 
 ---
-
 ## Jing – Free Screen Capture from TechSmith
 
 
@@ -41,4 +43,3 @@ Note that the flash file has to be uploaded to a SharePoint site as a file. To a
 
 
 ---
-

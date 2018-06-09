@@ -1,9 +1,12 @@
 ---
 Title: Text/HTML Token Replacement (DNN 4.6.x or higher)
-Created: 10/22/2007 3:30:06 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Text/HTML Token Replacement (DNN 4.6.x or higher)
 
@@ -16,7 +19,6 @@ Tokens are basically a way to show customized information about the portal envir
 
 
 ---
-
 ## Text/HTML Token Replacement (DNN 4.6.x or higher)
 
 
@@ -182,4 +184,3 @@ TIME is displayed as:   [TIME]  If a format is specified, it will attempt to 
 
 
 ---
-

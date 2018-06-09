@@ -1,14 +1,16 @@
 ---
 Title: Constraining Generics
-Created: 6/26/2009 8:26:34 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Constraining Generics
 
 ---
-
 ## Constraining Generics
 
 
@@ -39,4 +41,3 @@ Another cool item: Generic Delegates. Yes, you can apply generics to delegates &
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: Test Blog...
-Created: 9/6/2009 2:10:26 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Test Blog...
 
 ---
-
 ## Test Blog...
 
 
@@ -43,4 +45,3 @@ Thought I would do an update, just to show the way that this could be used for w
 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: My Story
-Created: 7/2/2009 1:56:28 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # My Story
 
 ---
-
 ## My Story
 
 
@@ -23,4 +25,3 @@ tba – how I became a Christian.
 
 
 ---
-

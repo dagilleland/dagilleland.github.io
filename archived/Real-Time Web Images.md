@@ -1,14 +1,16 @@
 ---
 Title: Real-Time Web Images
-Created: 9/6/2009 2:24:55 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Real-Time Web Images
 
 ---
-
 ## Real-Time Web Images
 
 
@@ -27,4 +29,3 @@ Also, check out this link: [Thin Image Upload](http://software.techrepublic.com.
 
 
 ---
-

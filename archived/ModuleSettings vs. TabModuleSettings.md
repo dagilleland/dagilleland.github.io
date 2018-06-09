@@ -1,14 +1,16 @@
 ---
 Title: ModuleSettings vs. TabModuleSettings
-Created: 8/12/2013 3:34:17 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # ModuleSettings vs. TabModuleSettings
 
 ---
-
 ## ModuleSettings vs. TabModuleSettings
 
 
@@ -33,4 +35,3 @@ Alongside the above usages of the ModuleId and TabModuleId are the roles they pl
 
 
 ---
-

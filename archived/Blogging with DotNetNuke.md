@@ -1,9 +1,12 @@
 ---
 Title: Blogging with DotNetNuke
-Created: 3/2/2008 6:35:09 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Blogging with DotNetNuke
 
@@ -20,7 +23,6 @@ If you are interested in having a website with blog, then read on and I'll tell 
 
 
 ---
-
 ## Blogging with DotNetNuke
 
 
@@ -31,4 +33,3 @@ TBA - This will be the start of the main article
 
 
 ---
-

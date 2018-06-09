@@ -1,14 +1,16 @@
 ---
 Title: Port 1851 vs. Port 1050
-Created: 9/6/2009 3:16:36 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Port 1851 vs. Port 1050
 
 ---
-
 ## Port 1851 vs. Port 1050
 
 
@@ -45,4 +47,3 @@ Yep, the manual change back to port 1050 definitely fixed the problem. Now, back
 
 
 ---
-

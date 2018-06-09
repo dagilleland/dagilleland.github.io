@@ -1,9 +1,12 @@
 ---
 Title: Five Tips to Maximizing Your Website
-Created: 6/18/2009 8:48:30 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Five Tips to Maximizing Your Website
 
@@ -17,7 +20,6 @@ Here's a few quick tips for getting the most our of your website. Of course, the
 
 
 ---
-
 ## Five Tips to Maximizing Your Website
 
 
@@ -84,4 +86,3 @@ There are other tips you can apply, but the ones identified here are among the m
 
 
 ---
-

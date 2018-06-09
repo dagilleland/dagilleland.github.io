@@ -1,14 +1,16 @@
 ---
 Title: Reviewing Drafts in Ventrian's News Articles Module
-Created: 8/12/2013 3:49:14 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Reviewing Drafts in Ventrian's News Articles Module
 
 ---
-
 ## Reviewing Drafts in Ventrian's News Articles Module
 
 
@@ -48,4 +50,3 @@ When listing unapproved articles, there is at the right of the article a check-b
 
 
 ---
-

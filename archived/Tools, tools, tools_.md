@@ -1,14 +1,16 @@
 ---
 Title: Tools, tools, tools...
-Created: 9/6/2009 3:05:34 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Tools, tools, tools...
 
 ---
-
 ## Tools, tools, tools...
 
 
@@ -29,4 +31,3 @@ In truth, I wind up using EditPlus a lot for doing search/replace on individual 
 
 
 ---
-

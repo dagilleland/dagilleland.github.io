@@ -1,14 +1,16 @@
 ---
 Title: WebControl Walkthrough - Building Your Own Composite Custom Control
-Created: 6/18/2009 11:47:02 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # WebControl Walkthrough - Building Your Own Composite Custom Control
 
 ---
-
 ## WebControl Walkthrough - Building Your Own Composite Custom Control
 
 
@@ -28,4 +30,3 @@ The composite custom controls covered in this areticle are:
 
 
 ---
-

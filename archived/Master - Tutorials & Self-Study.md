@@ -1,14 +1,16 @@
 ---
 Title: Master - Tutorials & Self-Study
-Created: 10/2/2007 5:36:38 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Master - Tutorials & Self-Study
 
 ---
-
 ## Master - Tutorials & Self-Study
 
 
@@ -142,18 +144,14 @@ Read Securing Pages
 
 Module Basics  
  -------------
-
  
 
 Website Basics  
  --------------
-
  
 
 Common Modules  
  --------------
 
 
-
 ---
-

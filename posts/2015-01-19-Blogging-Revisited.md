@@ -16,7 +16,6 @@ Nonetheless[^1], here I am blogging. Again. And this time[^2] I'm using Jekyll a
 [^3]: <#Footnotes>
 
 ----
-
 #### <a name="Footnotes"></a>Footnotes:
 
 1. Love that word :+1:

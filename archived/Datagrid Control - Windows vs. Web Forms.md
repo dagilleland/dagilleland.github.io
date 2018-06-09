@@ -1,14 +1,16 @@
 ---
 Title: Datagrid Control - Windows vs. Web Forms
-Created: 6/18/2009 11:10:06 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Datagrid Control - Windows vs. Web Forms
 
 ---
-
 ## Datagrid Control - Windows vs. Web Forms
 
 
@@ -19,4 +21,3 @@ The datagrid control is a popular control for easily displaying a table of infor
 
 
 ---
-

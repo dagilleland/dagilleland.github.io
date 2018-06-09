@@ -1,14 +1,16 @@
 ---
 Title: Inception Phase for Web Development
-Created: 4/19/2012 8:13:36 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Inception Phase for Web Development
 
 ---
-
 ## Inception Phase for Web Development
 So, I'm approached by an organization that wants to hire me to help build them a "portal" (which is just a fancy way of saying they want a website). The trouble is, from all they've told me so far, they have a pretty fuzzy picture of what they want, but they are eager to get an estimate of how much time it will take and how much it will cost. After all, they are hiring me because I'm the expert, and they've never ever owned (let alone "built") a website before.  
  Whoa there, Nelly, hold your horses!  
@@ -20,4 +22,3 @@ So, I'm approached by an organization that wants to hire me to help build them a
  - 
 
 ---
-

@@ -1,14 +1,16 @@
 ---
 Title: DNN® Development Essentials – A Methodology and More
-Created: 8/12/2013 3:46:50 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # DNN® Development Essentials – A Methodology and More
 
 ---
-
 ## DNN® Development Essentials – A Methodology and More
 
 # Developing DotNetNuke® Extensions – Towards a Solid Methodology
@@ -118,4 +120,3 @@ Producing high quality modules and other extensions for DotNetNuke on a consiste
 
 
 ---
-

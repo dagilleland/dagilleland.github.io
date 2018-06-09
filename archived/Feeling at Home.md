@@ -1,14 +1,16 @@
 ---
 Title: Feeling at Home
-Created: 11/7/2009 8:28:14 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Feeling at Home
 
 ---
-
 ## Feeling at Home
 
 
@@ -54,4 +56,3 @@ As a believer in and follower of Jesus, I know that He lives in my heart. Yet, I
 
 
 ---
-

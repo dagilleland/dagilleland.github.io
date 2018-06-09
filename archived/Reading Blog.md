@@ -1,14 +1,16 @@
 ---
 Title: Reading Blog
-Created: 9/6/2009 3:00:16 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Reading Blog
 
 ---
-
 ## Reading Blog
 
 
@@ -41,4 +43,3 @@ I really enjoyed this book.
 
 
 ---
-

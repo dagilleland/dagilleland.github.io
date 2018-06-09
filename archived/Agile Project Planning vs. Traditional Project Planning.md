@@ -1,14 +1,16 @@
 ---
 Title: Agile Project Planning vs. Traditional Project Planning
-Created: 10/5/2009 4:54:10 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Agile Project Planning vs. Traditional Project Planning
 
 ---
-
 ## Agile Project Planning vs. Traditional Project Planning
 
 
@@ -31,4 +33,3 @@ By the way, in that cost model article, it's worth reading the comments at the e
 
 
 ---
-

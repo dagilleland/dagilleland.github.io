@@ -1,14 +1,16 @@
 ---
 Title: Posting Demo Source Code
-Created: 3/4/2008 5:14:20 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Posting Demo Source Code
 
 ---
-
 ## Posting Demo Source Code
 
 
@@ -33,4 +35,3 @@ Download Solution - [ABC - Starter Classes.zip](/Portals/_TryDNN/images/News-Art
 
 
 ---
-

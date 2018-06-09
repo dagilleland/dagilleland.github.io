@@ -1,14 +1,16 @@
 ---
 Title: Getting Into Agile & Scrum
-Created: 11/21/2011 12:28:33 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Getting Into Agile & Scrum
 
 ---
-
 ## Getting Into Agile & Scrum
 
 
@@ -27,4 +29,3 @@ Why is Scrum so Hard? (41 min)
 
 
 ---
-

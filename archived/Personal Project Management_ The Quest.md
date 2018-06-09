@@ -1,14 +1,16 @@
 ---
-Title: Personal Project Management: The Quest
-Created: 9/13/2009 10:23:44 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+Title: Personal Project Management - The Quest
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Personal Project Management: The Quest
 
 ---
-
 ## Personal Project Management: The Quest
 
 
@@ -177,4 +179,3 @@ The path of this quest has often been vague, and I have found myself running aft
 
 
 ---
-

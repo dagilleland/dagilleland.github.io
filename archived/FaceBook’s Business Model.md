@@ -1,14 +1,16 @@
 ---
 Title: FaceBook's Business Model
-Created: 7/25/2009 7:13:31 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # FaceBook's Business Model
 
 ---
-
 ## FaceBook's Business Model
 
 
@@ -31,4 +33,3 @@ Like I said, this has been alluded to in the article, but what should be examine
 
 
 ---
-

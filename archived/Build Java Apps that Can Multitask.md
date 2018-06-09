@@ -1,14 +1,16 @@
 ---
 Title: Build Java Apps that Can Multitask
-Created: 9/6/2009 3:31:21 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Build Java Apps that Can Multitask
 
 ---
-
 ## Build Java Apps that Can Multitask
 
 
@@ -27,4 +29,3 @@ This [article](http://www.devx.com/java/article/27439) by Raghu Donepudi gives a
 
 
 ---
-

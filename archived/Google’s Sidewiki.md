@@ -1,14 +1,16 @@
 ---
 Title: Google's Sidewiki
-Created: 11/7/2009 10:02:19 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Google's Sidewiki
 
 ---
-
 ## Google's Sidewiki
 
 
@@ -100,4 +102,3 @@ For more, check out the [definition on Answers.com](http://www.answers.com/topic
 
 
 ---
-

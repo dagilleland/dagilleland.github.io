@@ -1,14 +1,16 @@
 ---
 Title: Practical Push/Pull with Git & Mercurial
-Created: 9/23/2013 1:25:21 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Practical Push/Pull with Git & Mercurial
 
 ---
-
 ## Practical Push/Pull with Git & Mercurial
 
 ## Background
@@ -139,4 +141,3 @@ Thanks for reading!
 
 
 ---
-

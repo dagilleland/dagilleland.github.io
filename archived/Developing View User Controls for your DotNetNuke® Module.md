@@ -1,14 +1,16 @@
 ---
 Title: Developing View User Controls for your DotNetNuke® Module
-Created: 8/12/2013 3:38:56 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Developing View User Controls for your DotNetNuke® Module
 
 ---
-
 ## Developing View User Controls for your DotNetNuke® Module
 
 
@@ -424,4 +426,3 @@ For more information on DotNetNuke module development basics, take a look at the
 
 
 ---
-

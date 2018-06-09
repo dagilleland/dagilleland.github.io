@@ -1,14 +1,16 @@
 ---
 Title: StatBrain – See How Your Website is Doing…
-Created: 10/12/2009 12:14:11 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # StatBrain – See How Your Website is Doing…
 
 ---
-
 ## StatBrain – See How Your Website is Doing…
 
 
@@ -27,4 +29,3 @@ So, try [StatBrain](http://www.StatBrain.com) on your website, and see what you 
 
 
 ---
-

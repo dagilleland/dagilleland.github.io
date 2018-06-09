@@ -1,14 +1,16 @@
 ---
 Title: Household Repairs – Repair Clinic
-Created: 6/19/2009 12:04:27 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Household Repairs – Repair Clinic
 
 ---
-
 ## Household Repairs – Repair Clinic
 
 
@@ -19,4 +21,3 @@ Draft: False
 
 
 ---
-

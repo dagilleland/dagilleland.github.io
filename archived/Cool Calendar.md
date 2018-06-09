@@ -1,14 +1,16 @@
 ---
 Title: Cool Calendar
-Created: 7/2/2009 2:48:51 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Cool Calendar
 
 ---
-
 ## Cool Calendar
 
 
@@ -36,4 +38,3 @@ Here's a <!--Begin mp_html_link_1_24f4471f-->cool calendar concept<sup class="it
 
 
 ---
-

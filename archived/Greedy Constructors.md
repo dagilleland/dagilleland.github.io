@@ -1,14 +1,16 @@
 ---
 Title: Greedy Constructors
-Created: 3/19/2012 10:22:10 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Greedy Constructors
 I get asked by my students, "What's a **Greedy Constructor**?". They see mentions of it on the web (like on StackOverflow.com), but it's not "defined" anywhere. Read more about it here.
 ---
-
 ## Greedy Constructors
 I get asked by my students, "What's a **Greedy Constructor**?". They see mentions of it on the web (like on StackOverflow.com), but it's not "defined" anywhere.  
    
@@ -29,4 +31,3 @@ I get asked by my students, "What's a **Greedy Constructor**?". They see mention
  So, now that I've blogged briefly about "Greedy Constructors", hopefully it will appear in Google (the ultimate help file).
 
 ---
-

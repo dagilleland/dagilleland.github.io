@@ -1,14 +1,16 @@
 ---
 Title: Thinking Through Form Design
-Created: 10/13/2009 10:42:46 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Thinking Through Form Design
 
 ---
-
 ## Thinking Through Form Design
 
 
@@ -43,4 +45,3 @@ So, check these out, and start making your sites sweeter. Cheers!
 
 
 ---
-

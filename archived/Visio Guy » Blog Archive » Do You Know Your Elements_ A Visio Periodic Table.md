@@ -1,14 +1,16 @@
 ---
 Title: Visio Guy » Blog Archive » Do You Know Your Elements? A Visio Periodic Table
-Created: 6/27/2009 5:38:49 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Visio Guy » Blog Archive » Do You Know Your Elements? A Visio Periodic Table
 OK, these Visio templates are just too cool! Not only are the Periodic Table shapes cool, but there are a lot of others too:  Bingo shapes  Smart-Fading Tree  USB Stick shape   Multi-Earth shape  and many more that I won't list here but that you can find at http://www.visguy.com/shapes/  I ran across these when I was doing a quick search for Visio templates that I could use for quickly mocking up web page and web control elements. I also ran across this template from the Interaction Designer's Coffee Break blog.  Lastly, I have to make note of how the Visio Guy actually takes time to explain how his templates work and are designed. For example, take a look at his description of how to make a glass cover effect - wow! And, he has references to other good resources for those interested in creating their own Visio graphics.  Of course, seeing is believing, and it behoves me (I love to use rarely-used words) to show you some screen-shots.      Thank you "Visio Guy" (aka Chris Roth)! (And by the way, you can donate if you use & appreciate his work...)   Technorati Tags: Visio  Visio Guy » Blog Archive » Do You Know Your Elements? A Visio Periodic Table
 ---
-
 ## Visio Guy » Blog Archive » Do You Know Your Elements? A Visio Periodic Table
 
 
@@ -57,4 +59,3 @@ Technorati Tags: [Visio](http://technorati.com/tags/Visio)
 
 
 ---
-

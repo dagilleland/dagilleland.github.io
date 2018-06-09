@@ -1,14 +1,16 @@
 ---
-Title: CodeProject: Advanced Unit Testing Articles
-Created: 7/2/2009 2:24:10 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+Title: CodeProject - Advanced Unit Testing Articles
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # CodeProject: Advanced Unit Testing Articles
 
 ---
-
 ## CodeProject: Advanced Unit Testing Articles
 
 
@@ -51,4 +53,3 @@ Marc Clifton has written a whole slew of [articles](http://www.codeproject.com/s
 
 
 ---
-

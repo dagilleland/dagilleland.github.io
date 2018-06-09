@@ -1,14 +1,16 @@
 ---
 Title: My 2009 Summer of Code
-Created: 6/26/2009 2:45:25 PM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # My 2009 Summer of Code
 
 ---
-
 ## My 2009 Summer of Code
 
 
@@ -41,4 +43,3 @@ Here's some other thoughts I want to capture as I transition to this summer:
 
 
 ---
-

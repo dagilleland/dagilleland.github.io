@@ -1,14 +1,16 @@
 ---
 Title: Note to Self – ObjectDataSource
-Created: 10/30/2009 2:58:39 AM
-Addendum: Republished from News Articles version
-Approved: False
-Draft: False
+meta:
+  - name: addendum
+    content: Republished from News Articles version
+  - name: approved
+    content: False
+  - name: draft
+    content: False
 ---
 # Note to Self – ObjectDataSource
 
 ---
-
 ## Note to Self – ObjectDataSource
 
 
@@ -35,4 +37,3 @@ Of course, it's worth looking at the MSDN stuff on this as well:
 
 
 ---
-
