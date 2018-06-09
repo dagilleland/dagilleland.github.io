@@ -1,0 +1,15 @@
+{
+  "name": "dagilleland.github.io",
+  "version": "1.0.0",
+  "description": "Personal and Professional Blog of Dan Gilleland",
+  "main": "index.html",
+  "repository": "https://github.com/dagilleland/dagilleland.github.io.git",
+  "author": "dagilleland <dagilleland@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^0.10.1"
+  }
+}
