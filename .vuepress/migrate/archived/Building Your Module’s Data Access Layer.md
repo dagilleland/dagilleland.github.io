@@ -10,12 +10,4 @@ meta:
 ---
 # Building Your Module's Data Access Layer
 
----
-## Building Your Module's Data Access Layer
-
-
 TBA – SqlDataProvider and the abstract DataProvider
-
-
-
----

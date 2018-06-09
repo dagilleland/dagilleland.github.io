@@ -1,9 +1,5 @@
 ---
-comments: false
-header:
-  title: About Dan's Blog.
-footer:
-  
+title: About Dan's Blog.
 ---
 # dagilleland.github.io
 
