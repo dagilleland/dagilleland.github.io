@@ -11,6 +11,15 @@ I'm a full-time programming instructor at NAIT in the Digital Media and IT progr
 
 ~~There's more to learn about me, both on this website and on my other sites. If you want to read some of my articles/musings/blogs, then head over to http://kb.Gilleland.ca or kb.Gilleland.info(the "kb" stand for "knowledge base").~~
 
+<Testing />
+<OtherComponent />
+<BibleRef />
+
+Read Heb 11:1-5 (NIV)
+
+John 3:15 (RSV)
+
+
 [![Build Status](https://travis-ci.org/dagilleland/dagilleland.github.io.svg?branch=publish)](https://travis-ci.org/dagilleland/dagilleland.github.io)
 
 ![](./images/single_cloud_database_400_clr_12136.png)
