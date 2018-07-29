@@ -1,5 +1,5 @@
 ---
-title: Vue for GitHub Pages
+title: VuePress for GitHub Pages
 summary: A guide to using VueHub, a small library that renders static web pages from markdown files. The goals of VueHub are to a) simplify the authoring process by allowing content creators to write using markdown, b) simplify publishing and navigation by using markdown links which can be easily edited, c) web content (including site navigation) to be 
 ---
 # TODO
