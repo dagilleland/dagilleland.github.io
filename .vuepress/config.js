@@ -19,15 +19,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/about/' },
-      { text: 'LOGs', link: '/logs/' },
-      { text: 'C-Sharp', link: '/csharp/' },
-      { text: 'Html', link: '/html/' },
-      { text: 'Razor', link: '/razor/' },
-      { text: 'Client-Server', link: '/clientserver/' },
-      { text: 'Webforms', link: '/webforms/' },
-      { text: 'Lab Specs', link: 'https://cpsc-1517.github.io/LabSpecs/' },
-      { text: 'Issues/Bugs', link: 'https://github.com/CPSC-1517/CPSC-1517.github.io/issues/new' },
-      { text: 'Moodle', link: 'https://moodle.nait.ca' },
+      { text: 'Articles', link: '/articles/' },
+      { text: 'Blog', link: '/blog/' }
     ],
     sidebar: {
       '/about/': [
