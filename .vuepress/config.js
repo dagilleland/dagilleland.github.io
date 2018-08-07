@@ -33,6 +33,7 @@ module.exports = {
       ],
 
       '/blog/': [
+        '',
         'asp-identities',
         'vuepress-broken-images',
         'why-patterns',
