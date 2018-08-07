@@ -35,7 +35,8 @@ module.exports = {
       '/blog/': [
         'asp-identities',
         'vuepress-broken-images',
-        'why-patterns'
+        'why-patterns',
+        'bless-israel'
       ],
       // fallback
       '/': [
