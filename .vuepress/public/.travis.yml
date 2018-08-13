@@ -1,5 +1,4 @@
 language: ruby
 
 script:
- - puts RUBY_VERSION
- 
+ - exit 0
