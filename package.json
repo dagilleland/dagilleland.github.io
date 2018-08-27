@@ -20,6 +20,6 @@
     "markdown-it-mermaid": "^0.2.5",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "vuepress": "^0.10.1"
+    "vuepress": "^0.10.2"
   }
 }
