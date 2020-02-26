@@ -1,0 +1,36 @@
+name: Build and Deploy
+on:
+  push:
+    branches: publish
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x] # Only run the 10.x build
+
+    steps:
+    - name: Checkout Publish branch
+      uses: actions/checkout@v1
+      with:
+        ref: 'publish'
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Yarn
+      run: npm install -g yarn
+
+    - name: Yarn build
+      run: |
+        yarn install
+        yarn run build
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.2.0
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: .vuepress/dist # The folder the action should deploy.
