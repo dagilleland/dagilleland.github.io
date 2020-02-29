@@ -30,13 +30,13 @@ module.exports = {
         ''
       ],
 
-      '/blog/': [
-        '',
-        'asp-identities',
-        'vuepress-broken-images',
-        'why-patterns',
-        'bless-israel'
-      ],
+      // '/blog/': [
+      //   '',
+      //   'asp-identities',
+      //   'vuepress-broken-images',
+      //   'why-patterns',
+      //   'bless-israel'
+      // ],
       // fallback
       '/': [
         ''
