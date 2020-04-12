@@ -6,6 +6,12 @@ _RnD/
 # VuePress
 .vuepress/dist/
 
+# Yarn 2 - NOT using Zero-installs - https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
 # Created by https://www.gitignore.io/api/node,macos,windows
 
 ### macOS ###
