@@ -26,8 +26,5 @@
     "mermaid": "^8.5.0",
     "vuepress": "1.4.0",
     "vuepress-theme-modern-blog": "^2.5.0"
-  },
-  "dependencies": {
-    "@vue/babel-preset-app": "^4.3.0"
   }
 }
