@@ -13,6 +13,7 @@
     "@vuepress/plugin-active-header-links": "^1.4.0",
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "@vuepress/plugin-last-updated": "^1.4.0",
+    "@vuepress/theme-blog": "^2.2.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-checkbox": "^1.1.0",
     "markdown-it-deflist": "^2.0.3",
@@ -23,7 +24,6 @@
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "mermaid": "^8.5.0",
-    "vuepress": "1.4.0",
-    "vuepress-theme-modern-blog": "^2.5.0"
+    "vuepress": "1.4.0"
   }
 }
