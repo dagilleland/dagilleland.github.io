@@ -20,24 +20,40 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
  */
 self.__precacheManifest = [
   {
+    "url": "_posts/2017-03-16-why-patterns.html",
+    "revision": "63e444d25e77566def723ebf0f0ab66f"
+  },
+  {
+    "url": "_posts/2018-07-28-asp-identities.html",
+    "revision": "cf3a02b11220743def23711ba7853705"
+  },
+  {
+    "url": "_posts/2018-08-07-bless-israel.html",
+    "revision": "059b0efa67ad4dc81f1cd921dd5d865c"
+  },
+  {
+    "url": "_posts/2019-09-16-church-hopping.html",
+    "revision": "e9de96dd82e1ad2219708a49c3a34e75"
+  },
+  {
     "url": "_posts/2020-02-08-setting-up-VuePress-blog.html",
-    "revision": "85ebae14243c601b57b507dc3d9eadf0"
+    "revision": "f66dd56a50db2852407f7df6954f7834"
   },
   {
     "url": "_projects/first-demo-project.html",
-    "revision": "9a1f430fcd0fdaac5427d88aafe56986"
+    "revision": "ac363b73cf9b5056f3aeb5a178d17ac1"
   },
   {
     "url": "about/dan.html",
-    "revision": "93b061865ecbac62f801dae0e6ddb3f4"
+    "revision": "ef7548f4108d5b2c8292b36e4a947cd9"
   },
   {
     "url": "about/vue-hub.html",
-    "revision": "7b96d6fc319d44c0bffdb9d0010528bb"
+    "revision": "25005d6c412ddc709cd5d879eb95f954"
   },
   {
     "url": "articles/index.html",
-    "revision": "ebd159c2e92ee48f8790567b4c9b7db8"
+    "revision": "bff9b2122da9eed48b0c05b88ec4202b"
   },
   {
     "url": "assets/css/0.styles.b8f64cbb.css",
@@ -100,48 +116,48 @@ self.__precacheManifest = [
     "revision": "e33c75e881cdf6a6425280825d705e0f"
   },
   {
-    "url": "assets/js/19.210bbb5a.js",
-    "revision": "cbe6c2ef23d93e9f691a5ce1d500e8f5"
+    "url": "assets/js/19.14d81983.js",
+    "revision": "7d50f44fac13ccdd4d1458910e396498"
   },
   {
-    "url": "assets/js/20.39f8f687.js",
-    "revision": "a913b95c883330c3710db5673ba88a84"
+    "url": "assets/js/20.7ef1f3ab.js",
+    "revision": "f4361280dda32a2aed69f1bfe579099c"
   },
   {
-    "url": "assets/js/21.443552c0.js",
-    "revision": "4944de04cbaaea57d2d039199227b967"
+    "url": "assets/js/21.72bd6078.js",
+    "revision": "2c952de135d9466c5caf0e12e0d15289"
   },
   {
-    "url": "assets/js/22.6f418744.js",
-    "revision": "bcd37d1db21259574291debbae3b2bb7"
+    "url": "assets/js/22.178ed6a1.js",
+    "revision": "50f4e92441d54f96e8b355a4d4f3d6a1"
   },
   {
-    "url": "assets/js/23.b2db8f03.js",
-    "revision": "1ed019df37d38e36e0a4058151e45480"
+    "url": "assets/js/23.95092c3f.js",
+    "revision": "d61582731c6d9f98038ccd65667e34ec"
   },
   {
-    "url": "assets/js/24.ae5a4d86.js",
-    "revision": "25e9b7774825ce7d6d51ba3cc6901fc1"
+    "url": "assets/js/24.8b271ad0.js",
+    "revision": "d49143a06e6559654142dcb9982b0a92"
   },
   {
-    "url": "assets/js/25.e5b561dd.js",
-    "revision": "40cabafa78d71e7f722c015f4d839be0"
+    "url": "assets/js/25.68aa4801.js",
+    "revision": "54d80d51c6595458a3b62a604af42f58"
   },
   {
-    "url": "assets/js/26.e23606e6.js",
-    "revision": "d23b8d2fd9e9a418899f8f0074ec512a"
+    "url": "assets/js/26.61a2ff4c.js",
+    "revision": "50ef875d64a85a062f468452786375b2"
   },
   {
-    "url": "assets/js/27.87f7cff9.js",
-    "revision": "6016cac8953fc237dd519ab53cb56766"
+    "url": "assets/js/27.d75a8a1c.js",
+    "revision": "e98bd1072cbc5d74bcb8ce0515e66d7c"
   },
   {
-    "url": "assets/js/28.24cf5ee2.js",
-    "revision": "2c9616c2809badddc00a1a2728b9ca31"
+    "url": "assets/js/28.e3d78952.js",
+    "revision": "305287d16b2e58babb88d310d3c5e21c"
   },
   {
-    "url": "assets/js/29.f4dee679.js",
-    "revision": "357b48774682b8ab92b1c083f54447f3"
+    "url": "assets/js/29.879d6486.js",
+    "revision": "ee74378021e753378d7535896de793e3"
   },
   {
     "url": "assets/js/30.a082caa6.js",
@@ -176,44 +192,28 @@ self.__precacheManifest = [
     "revision": "cecc70f1d64da1eb61eea7ad89fcc8b1"
   },
   {
-    "url": "assets/js/app.02738d20.js",
-    "revision": "15434dba8e74a25b597978f438ccf886"
+    "url": "assets/js/app.930ab092.js",
+    "revision": "8c184d6cc362b145ff7012c14355f0a9"
   },
   {
     "url": "assets/js/vuejs-paginate.1b67b909.js",
     "revision": "f77e4c67308efe38d07cceb8b054b2cd"
   },
   {
-    "url": "blog/asp-identities.html",
-    "revision": "e4c42c04809a8c094bf551c10fd7b976"
-  },
-  {
-    "url": "blog/bless-israel.html",
-    "revision": "426b1212121bfc2bbb7baff26f7390b7"
-  },
-  {
-    "url": "blog/church-hopping.html",
-    "revision": "5e0e617a4df5a5e927a5fc90438b9c01"
-  },
-  {
     "url": "blog/index.html",
-    "revision": "1e27a1097ab933b31d8ecd8ae073278f"
+    "revision": "b33a0cec8ccb238b58f9aaa7de8548f2"
   },
   {
     "url": "blog/vuepress-broken-images.html",
-    "revision": "287321158cfe7132efbae59d6c17b9eb"
-  },
-  {
-    "url": "blog/why-patterns.html",
-    "revision": "31eb89505d42976e3f3e1eea9f5015fe"
+    "revision": "d28fc4c054962f166b4aa677ef0feb0e"
   },
   {
     "url": "draft/index.html",
-    "revision": "c347c64fa0cc42b2c486fe6d4b36af70"
+    "revision": "9b3d94d91612a5ba26756f7d6a1086e5"
   },
   {
     "url": "index.html",
-    "revision": "e601922a74d3b4d67333880e6b770464"
+    "revision": "10737a81ebf7af8fb5b0ac5ce417fc29"
   },
   {
     "url": "prototype/index.html",
