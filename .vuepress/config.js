@@ -14,10 +14,13 @@ module.exports = {
     md.use(require('markdown-it-sub'))
     md.use(require('markdown-it-sup'))
   },
+  theme: 'modern-blog',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/about/dan' },
       { text: 'Articles', link: '/articles/' },
+      { text: 'Archive', link: '/archive/' },
+      { text: 'Tags', link: '/tag/' },
       { text: 'Blog', link: '/blog/' }
     ],
     sidebar: {
@@ -40,6 +43,28 @@ module.exports = {
       // fallback
       '/': [
         ''
+      ]
+    },
+    footer: {
+      copyright: [
+        {
+          text: 'Privacy Policy',
+          link: 'https://policies.google.com/privacy?hl=en-US',
+        },
+        {
+          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
+          link: '',
+        },
+      ],
+      contact: [
+        {
+          type: 'github',
+          link: 'https://github.com/vuejs/vuepress',
+        },
+        {
+          type: 'twitter',
+          link: 'https://github.com/vuejs/vuepress',
+        }
       ]
     }
   },
