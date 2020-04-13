@@ -10,7 +10,10 @@
     "build": "vuepress build"
   },
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.4.0",
+    "@vuepress/plugin-back-to-top": "^1.4.0",
     "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-last-updated": "^1.4.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-checkbox": "^1.1.0",
     "markdown-it-deflist": "^2.0.3",
