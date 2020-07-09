@@ -18,8 +18,8 @@ module.exports = {
     md.use(require('markdown-it-sub'))
     md.use(require('markdown-it-sup'))
   },
-  theme: '@vuepress/theme-blog',
-  // theme: 'modern-blog',
+  // theme: '@vuepress/theme-blog',
+  theme: 'modern-blog',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/about/dan' },
