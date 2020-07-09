@@ -21,55 +21,55 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "_posts/2012-05-22-readability-post.html",
-    "revision": "cbb5b39420853f0489b50bed53203335"
+    "revision": "4f6b124bf99404abecd977ca967263cc"
   },
   {
     "url": "_posts/2013-05-23-readability-feature-post.html",
-    "revision": "8b186980c004b59e26c7cba018897525"
+    "revision": "5890798f795bf89493638e82e14e2f8f"
   },
   {
     "url": "_posts/2015-01-19-Blogging-Revisited.html",
-    "revision": "c16c33b6fca862a8a148abee08faec43"
+    "revision": "bc49212beac1bedc528a889c76cef706"
   },
   {
     "url": "_posts/2017-03-16-why-patterns.html",
-    "revision": "71445be3e57c3ca3049d327a80fe659a"
+    "revision": "398da3f8410c497fe36d1a8ed4ee3f0c"
   },
   {
     "url": "_posts/2018-07-28-asp-identities.html",
-    "revision": "88bd61b29be2ab939b1d2b8a9b5e6ae2"
+    "revision": "2ccece803ba2834fc9048e3fe1c87421"
   },
   {
     "url": "_posts/2018-08-07-bless-israel.html",
-    "revision": "a3cccc601f2ab2a7cf7a004fddef913a"
+    "revision": "9a3e07d89a7d8006b0dc8def39e0bf37"
   },
   {
     "url": "_posts/2019-09-16-church-hopping.html",
-    "revision": "93807f385052a595e07629f0203befff"
+    "revision": "5ed85e2f5f974a8827186e5edbfa1290"
   },
   {
     "url": "_posts/2020-02-08-setting-up-VuePress-blog.html",
-    "revision": "d3478fdd1d11d39f47598fb33380f369"
+    "revision": "c0de6d1348930b6f85ec5620cbe4bcd8"
   },
   {
     "url": "_projects/first-demo-project.html",
-    "revision": "34716d69369911e01159dd7a1d092ba7"
+    "revision": "8334897e7864813460e585371fdfc80b"
   },
   {
     "url": "404.html",
-    "revision": "0758c41e5a7f2adb6c0818a413e798e6"
+    "revision": "d210a2bd9c7916c6ab323373a6a3c31f"
   },
   {
     "url": "about/dan.html",
-    "revision": "5aaf454903dfd67d2bb1bb4db8b5da7d"
+    "revision": "90a671d61d518952b81ac42a09c8cec7"
   },
   {
     "url": "about/vue-hub.html",
-    "revision": "9e2a980508bbbe12f87b3774e665069f"
+    "revision": "ffdc01914098482f175ba9c4534baf8e"
   },
   {
     "url": "articles/index.html",
-    "revision": "9651c1b6c0b9149b24373ed4a116e1d6"
+    "revision": "55eb890405b9a466d75e08a32c230fd0"
   },
   {
     "url": "assets/css/0.styles.0f786b28.css",
@@ -136,28 +136,28 @@ self.__precacheManifest = [
     "revision": "c9f2adb2697e6a51aaad9d7cb8017e23"
   },
   {
-    "url": "assets/js/21.271be0a1.js",
-    "revision": "f7dc7eed1c01cf0b15c976e984120fff"
+    "url": "assets/js/21.4d7ff02c.js",
+    "revision": "c0d74a9e1071db481a7627d66e38d68d"
   },
   {
     "url": "assets/js/22.0624b457.js",
     "revision": "ca0031a369c88de1b76aa732bb62701f"
   },
   {
-    "url": "assets/js/23.9083ff3c.js",
-    "revision": "ccf09c00e95f1dc2b88ae2d212cae408"
+    "url": "assets/js/23.decc4b35.js",
+    "revision": "75a8b0db5f7b0d8a8b72e54465555f69"
   },
   {
-    "url": "assets/js/24.6d8fcfa3.js",
-    "revision": "6e5e7d134d0efd0b4436bd6a3b2350db"
+    "url": "assets/js/24.1305f5a7.js",
+    "revision": "50b7570c4eeb44677c8852ae0c448139"
   },
   {
-    "url": "assets/js/25.c83e7736.js",
-    "revision": "bcfe576766dafc1c7296115db4b69d86"
+    "url": "assets/js/25.1da6a881.js",
+    "revision": "8ec0178041fd4fd8373beff434e0ce17"
   },
   {
-    "url": "assets/js/26.42de268e.js",
-    "revision": "4398693c72cdf16e31b29e5dd42ca242"
+    "url": "assets/js/26.596c8efe.js",
+    "revision": "2b9991ec910df3441d6dc1c3b3bf6a1f"
   },
   {
     "url": "assets/js/27.c9a694fc.js",
@@ -212,8 +212,8 @@ self.__precacheManifest = [
     "revision": "a5174211c044adcb5affb11ce7abab38"
   },
   {
-    "url": "assets/js/app.a4d0ab20.js",
-    "revision": "75905e872ea0d7db58bc178ff60ca952"
+    "url": "assets/js/app.0edc0117.js",
+    "revision": "9afa19708bf71ac2caabed177778f9e9"
   },
   {
     "url": "assets/js/vuejs-paginate.7519f153.js",
@@ -221,19 +221,19 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/index.html",
-    "revision": "32e4d1510adeb8ab4580509c20470c1a"
+    "revision": "3a98928de1fd38704bb229143c0244fc"
   },
   {
     "url": "blog/vuepress-broken-images.html",
-    "revision": "384f42fa7556591ee41178d81deadd51"
+    "revision": "906833325287e9862dfc54feb491e274"
   },
   {
     "url": "draft/index.html",
-    "revision": "abdbd99ff1692ac2fc6c7820e28dd8dc"
+    "revision": "33a8627154381dc3ac4025bc7b4510f7"
   },
   {
     "url": "index.html",
-    "revision": "ab8e7266892310e537cdd73baf8f92fb"
+    "revision": "2418accaee97b408343e624be1784f3f"
   },
   {
     "url": "prototype/index.html",
