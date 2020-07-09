@@ -21,23 +21,23 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "_projects/first-demo-project.html",
-    "revision": "4dc2506df6c70158a8366bc0aa264d21"
+    "revision": "bed0e9a8303310c0f8f61b8b9b1e0f34"
   },
   {
     "url": "404.html",
-    "revision": "e6b05109d82e36b1669c4dff7eba7984"
+    "revision": "44bc30fd96bc228e3854aa5b0bf53ac0"
   },
   {
     "url": "about/dan.html",
-    "revision": "c5db57f9a0eb6c8e4b67efd1b43385bd"
+    "revision": "01b2af759b259be7f75c011e51685a0a"
   },
   {
     "url": "about/vue-hub.html",
-    "revision": "2370ee6990de49ac90c35053d1131f82"
+    "revision": "a97b220d2bd2b0ac34bec4de76a209b3"
   },
   {
     "url": "articles/index.html",
-    "revision": "473176cab3b0724d6300321a2b78a701"
+    "revision": "0218ac84eb32740493252d4a7c8d94da"
   },
   {
     "url": "assets/css/0.styles.0f786b28.css",
@@ -172,8 +172,8 @@ self.__precacheManifest = [
     "revision": "a5174211c044adcb5affb11ce7abab38"
   },
   {
-    "url": "assets/js/app.475444e9.js",
-    "revision": "d49a4655934b3c04c76cd516e658c64b"
+    "url": "assets/js/app.8b0934b3.js",
+    "revision": "f0d87feacc64420c48243e6c93a79516"
   },
   {
     "url": "assets/js/vuejs-paginate.7519f153.js",
@@ -181,51 +181,51 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/2012/05/22/readability-post/index.html",
-    "revision": "ba39566d1cf55eb1a2c27aed297e1026"
+    "revision": "1a45c60747a33d18096eb817f4a097f5"
   },
   {
     "url": "blog/2013/05/23/readability-feature-post/index.html",
-    "revision": "b03308e49330cb38d0e810eaadf5d4b1"
+    "revision": "45fd287dfb128b675f45098ce1e67ced"
   },
   {
     "url": "blog/2015/01/19/blogging-revisited/index.html",
-    "revision": "4f383bcd3c26779bb4abe8a11256e6f8"
+    "revision": "b13d9248c918720c1d2fe0d51f883a24"
   },
   {
     "url": "blog/2017/03/16/why-patterns/index.html",
-    "revision": "d0331d1c569186c048c88b9d21ea48ea"
+    "revision": "e9636d543d35d3624a3de441ca1bf12d"
   },
   {
     "url": "blog/2018/07/28/asp-identities/index.html",
-    "revision": "eeaf5e0f504d5cea7d8ff8aabd358cfe"
+    "revision": "058d76ea8a0c7e3eb64b5124d2a2aa32"
   },
   {
     "url": "blog/2018/08/07/bless-israel/index.html",
-    "revision": "4d2119e2d477e8a44a17dacd959d27b0"
+    "revision": "ba640e1512adf4d5e9f18fa409d51c0c"
   },
   {
     "url": "blog/2019/09/16/church-hopping/index.html",
-    "revision": "51c77eef6c826f953b70a7a027f27fd3"
+    "revision": "77b4f673607528cab692173182f71458"
   },
   {
     "url": "blog/2020/02/08/setting-up-vuepress-blog/index.html",
-    "revision": "354d3ff1c29d8ec3b4d61dd0560482ea"
+    "revision": "61de5c3583be30fa2393e6eb5c478926"
   },
   {
     "url": "blog/index.html",
-    "revision": "debafbd3d04c278f80c31a7cc92310ea"
+    "revision": "3c3d98691ca29dcc462e0cdce85af4bc"
   },
   {
     "url": "blog/page/2/index.html",
-    "revision": "5261bce9873cbba138c185bf1cfd60d9"
+    "revision": "3357105c789ddfe13f7ecd8f2fb1fe67"
   },
   {
     "url": "draft/index.html",
-    "revision": "1fefff3bb52a4a7b57c2667b5efc1518"
+    "revision": "d3ccbca7b6dffd2df1d81360b67ecd1e"
   },
   {
     "url": "index.html",
-    "revision": "fefe262c8dea5949ea70104968244281"
+    "revision": "a48542ab57a01c3b35a11a07f05b792a"
   },
   {
     "url": "prototype/index.html",
@@ -233,15 +233,19 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/church/index.html",
-    "revision": "354ec1495611f2e00063b71a24ab1368"
+    "revision": "47835bdc26b04fe8c57bfc9a36025383"
   },
   {
     "url": "tag/index.html",
-    "revision": "2ab83360886139c063f244b90a850283"
+    "revision": "77c134316efd763b80cd91869be152b0"
   },
   {
-    "url": "tag/Vue, VuePress/index.html",
-    "revision": "66c419e716a1dedf3c6b2c7b1a953488"
+    "url": "tag/Vue/index.html",
+    "revision": "9a2421ec0172e00f2b7afaf2609b6359"
+  },
+  {
+    "url": "tag/VuePress/index.html",
+    "revision": "279be78084e7599c9674b3b5ad30d932"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
