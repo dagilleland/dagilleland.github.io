@@ -92,11 +92,13 @@ module.exports = {
           // Target directory
           dirname: '_posts',
           // Path of the `entry page` (or `list page`)
-          path: '/blogs/',
+          path: '/blog/',
           pagination: {
-            lengthPerPage: 5,
+            lengthPerPage: 4,
+            preText: 'Previous',
+            nextText: 'Next'
           },
-          itemPermalink: '/blogs/:year/:month/:day/:slug'
+          itemPermalink: '/blog/:year/:month/:day/:slug'
         }
       ],
       frontmatters: [
