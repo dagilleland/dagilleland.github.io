@@ -21,23 +21,23 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "_projects/first-demo-project.html",
-    "revision": "3e9d456b7b5535e2fa1b48cad66c3d56"
+    "revision": "4dc2506df6c70158a8366bc0aa264d21"
   },
   {
     "url": "404.html",
-    "revision": "2ac20c7be21eae3cffa862a5b7127341"
+    "revision": "e6b05109d82e36b1669c4dff7eba7984"
   },
   {
     "url": "about/dan.html",
-    "revision": "5763cf50d4f482877ed37e7ab7485569"
+    "revision": "c5db57f9a0eb6c8e4b67efd1b43385bd"
   },
   {
     "url": "about/vue-hub.html",
-    "revision": "d1e6d48f4f76ae4fccafb50ccf3ecf20"
+    "revision": "2370ee6990de49ac90c35053d1131f82"
   },
   {
     "url": "articles/index.html",
-    "revision": "0d559cdc099336108386db73788013b0"
+    "revision": "473176cab3b0724d6300321a2b78a701"
   },
   {
     "url": "assets/css/0.styles.0f786b28.css",
@@ -172,8 +172,8 @@ self.__precacheManifest = [
     "revision": "a5174211c044adcb5affb11ce7abab38"
   },
   {
-    "url": "assets/js/app.468e2371.js",
-    "revision": "f60632ef333e66e34a521cfa7945ca98"
+    "url": "assets/js/app.475444e9.js",
+    "revision": "d49a4655934b3c04c76cd516e658c64b"
   },
   {
     "url": "assets/js/vuejs-paginate.7519f153.js",
@@ -181,51 +181,51 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/2012/05/22/readability-post/index.html",
-    "revision": "d90b86000abc20da23117f529a230b7d"
+    "revision": "ba39566d1cf55eb1a2c27aed297e1026"
   },
   {
     "url": "blog/2013/05/23/readability-feature-post/index.html",
-    "revision": "9eefc9618324687c14c7a062de98acd1"
+    "revision": "b03308e49330cb38d0e810eaadf5d4b1"
   },
   {
     "url": "blog/2015/01/19/blogging-revisited/index.html",
-    "revision": "5d171b6fdc935522605a73cf15ced4f7"
+    "revision": "4f383bcd3c26779bb4abe8a11256e6f8"
   },
   {
     "url": "blog/2017/03/16/why-patterns/index.html",
-    "revision": "05841b7ac56995f3b17ef2ea66562ed1"
+    "revision": "d0331d1c569186c048c88b9d21ea48ea"
   },
   {
     "url": "blog/2018/07/28/asp-identities/index.html",
-    "revision": "74a1684edd27b3cd22372872bb704cd0"
+    "revision": "eeaf5e0f504d5cea7d8ff8aabd358cfe"
   },
   {
     "url": "blog/2018/08/07/bless-israel/index.html",
-    "revision": "667a73c849e29f018419b0a2d8e98bd0"
+    "revision": "4d2119e2d477e8a44a17dacd959d27b0"
   },
   {
     "url": "blog/2019/09/16/church-hopping/index.html",
-    "revision": "64bba8ef093a6c0d299ccc65ad860afa"
+    "revision": "51c77eef6c826f953b70a7a027f27fd3"
   },
   {
     "url": "blog/2020/02/08/setting-up-vuepress-blog/index.html",
-    "revision": "c0bd507789036d31f4a5633376335524"
+    "revision": "354d3ff1c29d8ec3b4d61dd0560482ea"
   },
   {
     "url": "blog/index.html",
-    "revision": "03697282889ce15a8c200121de37f1c3"
+    "revision": "debafbd3d04c278f80c31a7cc92310ea"
   },
   {
     "url": "blog/page/2/index.html",
-    "revision": "1dab965853ca463d040b8eb92fb92c7a"
+    "revision": "5261bce9873cbba138c185bf1cfd60d9"
   },
   {
     "url": "draft/index.html",
-    "revision": "2af5f248427bc79e889a96060ed63888"
+    "revision": "1fefff3bb52a4a7b57c2667b5efc1518"
   },
   {
     "url": "index.html",
-    "revision": "fd5a70cae14856420f6689cba117b326"
+    "revision": "fefe262c8dea5949ea70104968244281"
   },
   {
     "url": "prototype/index.html",
@@ -233,15 +233,15 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/church/index.html",
-    "revision": "e98da9b235d0df59a14052be07b359ff"
+    "revision": "354ec1495611f2e00063b71a24ab1368"
   },
   {
     "url": "tag/index.html",
-    "revision": "40de325de850a38424c94f2a9a51cb93"
+    "revision": "2ab83360886139c063f244b90a850283"
   },
   {
-    "url": "tag/Vue VuePress/index.html",
-    "revision": "6e7dc76bdf648ebd5b4ac185374b84ee"
+    "url": "tag/Vue, VuePress/index.html",
+    "revision": "66c419e716a1dedf3c6b2c7b1a953488"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
