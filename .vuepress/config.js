@@ -10,6 +10,10 @@ module.exports = {
     md.use(require('markdown-it-deflist'))
     md.use(require('markdown-it-abbr'))
     md.use(require('markdown-it-mark'))
+    // md.use(require('markdown-it-texmath'), { engine: require('katex'),
+    //                                          delimiters:'dollars',
+    //                                          macros:{"\\RR": "\\mathbb{R}"}
+    //                                        })
     md.use(require('markdown-it-footnote'))
     md.use(require('markdown-it-sub'))
     md.use(require('markdown-it-sup'))

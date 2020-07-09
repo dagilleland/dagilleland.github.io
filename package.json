@@ -10,21 +10,23 @@
     "build": "vuepress build"
   },
   "devDependencies": {
-    "@vuepress/plugin-active-header-links": "^1.4.0",
-    "@vuepress/plugin-back-to-top": "^1.4.0",
+    "@vuepress/plugin-active-header-links": "^1.5.2",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-blog": "^1.9.2",
-    "@vuepress/plugin-last-updated": "^1.4.0",
+    "@vuepress/plugin-last-updated": "^1.5.2",
     "@vuepress/theme-blog": "^2.2.0",
+    "katex": "^0.11.1",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-checkbox": "^1.1.0",
     "markdown-it-deflist": "^2.0.3",
     "markdown-it-footnote": "3.0.2",
     "markdown-it-imsize": "^2.0.1",
-    "markdown-it-kbd": "2.0.0",
+    "markdown-it-kbd": "^2.2.0",
     "markdown-it-mark": "3.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "mermaid": "^8.5.0",
-    "vuepress": "1.4.0"
+    "markdown-it-texmath": "^0.7.2",
+    "mermaid": "^8.5.2",
+    "vuepress": "^1.5.2"
   }
 }

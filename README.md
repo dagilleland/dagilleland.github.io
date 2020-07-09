@@ -11,6 +11,7 @@ I'm a full-time programming instructor at NAIT in the Digital Media and IT progr
 
 ~~There's more to learn about me, both on this website and on my other sites. If you want to read some of my articles/musings/blogs, then head over to http://kb.Gilleland.ca or kb.Gilleland.info(the "kb" stand for "knowledge base").~~
 
+
 <Testing />
 <OtherComponent />
 <BibleRef />
