@@ -50,6 +50,12 @@ module.exports = {
         ''
       ]
     },
+    sitemap: {
+      hostname: 'https://gilleland.ca/'
+    },
+    feed: {
+      canonical_base: 'https://gilleland.ca/'
+    }
     // footer: {
     //   copyright: [
     //     {
