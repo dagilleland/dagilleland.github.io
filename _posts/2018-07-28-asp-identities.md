@@ -1,9 +1,13 @@
 ---
 title: Identities Under IIS
+tag:
+  - IIS
+  - Security
+  - ASP.Net
 ---
 # Identities Under IIS
 
-The following is a copy of the [excellent post](http://www.mikeobrien.net/blog/identities-for-different-iis7) by [Mike O'Brien](http://www.mikeobrien.net/cv/). His original post is dated in 2009, but it's information is ***very*** helpful for anyone trying to make sense of how Identities are extablished under the various IIS authentication configurations.
+The following is a copy of the [excellent post](http://www.mikeobrien.net/blog/identities-for-different-iis7) by [Mike O'Brien](http://www.mikeobrien.net/cv/). His original post is dated in 2009, but it's information is ***very*** helpful for anyone trying to make sense of how Identities are established under the various IIS authentication configurations.
 
 It's so good, I'm simply afraid that one day it might be lost, so I'm capturing it here for my own reference.
 
