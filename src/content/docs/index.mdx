@@ -28,16 +28,18 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
+import joel from '../../assets/JoelGilleland.png';
+import dan from '../../assets/DanGilleland.jpg';
 
 ## Check Us Out
 
 <CardGrid stagger>
   <Card title="Joel Gilleland" icon="pencil">
-    <Image src="src/assets/JoelGilleland.png" alt="Joel Gilleland" class="float-right rounded-lg size-32 ml-3" />
+    <Image src={joel} alt="Joel Gilleland" class="float-right rounded-lg size-32 ml-3" />
     Joel is a Junior Architectural Technologist. He graduated with honours from NAIT in 2024. For a sample of his work, visit his [**online portfolio**](https://gilleland.ca/joel).
   </Card>
   <Card title="Dan Gilleland" icon="add-document">
-    <Image src="src/assets/DanGilleland.jpg" alt="Dan Gilleland" class="float-left rounded-lg size-24 grayscale mr-3" />
+    <Image src={dan} alt="Dan Gilleland" class="float-left rounded-lg size-24 grayscale mr-3" />
     I teach computer programming at the post-secondary level (2000 - present). My roots in computer programming go back to the late '70s when I first started programming in high school.
   </Card>
   <Card title="Dynamic Generation, Inc." icon="setting">
