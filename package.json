@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "gilleland.ca",
+  "description": "Dan Gilleland's personal website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
