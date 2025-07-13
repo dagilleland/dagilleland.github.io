@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwind from '@astrojs/tailwind';
+import tailwind from '@tailwindcss/vite';
 import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
@@ -9,9 +9,9 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'Gilleland.ca',
-            social: {
-                github: 'https://github.com/dagilleland/dagilleland.github.io',
-            },
+            social: [
+                { icon: 'github', label: 'GitHub', href: 'https://github.com/dagilleland/dagilleland.github.io'},
+            ],
             sidebar: [
                 {
                     label: 'Guides',
