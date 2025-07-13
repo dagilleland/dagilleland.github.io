@@ -1,8 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* 1. Declare the layers (including Starlight’s custom layer) */
+@layer base, starlight, theme, components, utilities;
 
-/*
-Add additional Tailwind styles to this file, for example with @layer:
-https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
-*/
+/* 2. Pull in Starlight’s compatibility styles */
+@import "@astrojs/starlight-tailwind";
+
+/* 3. Pull in Tailwind’s theme & utilities layers from CSS packages */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* 4. Your custom design-token overrides go here */
+@theme {
+  /* Example: override “accent” to use Indigo shades */
+  --color-accent-50: theme(colors.indigo.50);
+  --color-accent-100: theme(colors.indigo.100);
+  /* …through… */
+  --color-accent-900: theme(colors.indigo.900);
+
+  /* And override “gray” to use Zinc shades */
+  --color-gray-50: theme(colors.zinc.50);
+  --color-gray-100: theme(colors.zinc.100);
+  /* …through… */
+  --color-gray-900: theme(colors.zinc.900);
+}
