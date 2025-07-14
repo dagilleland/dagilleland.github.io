@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwind from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite';
 import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
@@ -50,6 +50,8 @@ export default defineConfig({
 
             })],
         }),
-        tailwind({ applyBaseStyles: false }),
     ],
+    vite: {
+        plugins: [tailwindcss()]
+    }
 });
