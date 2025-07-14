@@ -10,9 +10,23 @@ export default defineConfig({
         starlight({
             title: 'Gilleland.ca',
             social: [
+                { icon: 'open-book', label: 'Docs', href: '/tour'},
                 { icon: 'github', label: 'GitHub', href: 'https://github.com/dagilleland/dagilleland.github.io'},
             ],
             sidebar: [
+                {
+                    label: 'Tour',
+                    items: [
+                        { label: 'Site Tour', link: '/tour/' },
+                    ],
+                },
+                {
+                    label: 'Programming',
+                    items: [
+                        // Each item here is one entry in the navigation menu.
+                        { label: 'About', link: '/programming/about/' },
+                    ],
+                },
                 {
                     label: 'Guides',
                     items: [
@@ -24,12 +38,6 @@ export default defineConfig({
                     label: 'Reference',
                     autogenerate: { directory: 'reference' },
                 },
-                {
-                    label: 'Tour',
-                    items: [
-                        { label: 'Site Tour', link: '/tour/' },
-                    ],
-                }
             ],
             customCss: ['./src/tailwind.css'],
             plugins: [starlightBlog({
