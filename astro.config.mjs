@@ -38,6 +38,10 @@ export default defineConfig({
                     label: 'Reference',
                     autogenerate: { directory: 'reference' },
                 },
+                {
+                    label: 'Archives',
+                    autogenerate: { directory: 'archives' },
+                },                
             ],
             customCss: ['./src/tailwind.css'],
             plugins: [starlightBlog({
