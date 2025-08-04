@@ -59,7 +59,10 @@ export default defineConfig({
                 },
                 prevNextLinksOrder: 'reverse-chronological',
                 prefix: 'blog', // BTW, this means "look under src/content/blog",
-
+                metrics: {
+                    readingTime: true,
+                    words: 'total',
+                },
             }),
             ],
         }),
