@@ -1,0 +1,61 @@
+---
+title: Student Workbooks
+date: 2025-09-10
+tags:
+  - GitHub
+  - Education
+excerpt: When I teach a programming course, I always set them up with a **student workbook** where they can enter in all the demos and practice assignments I have them do in class. Here's how I set that up&hellip;
+---
+
+import { Aside, FileTree, Steps } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import tempRepo from './student-workbooks/github.com_template_settings.png';
+
+
+When I teach a programming course, I always set them up with a **student workbook** where they can enter in all the demos and practice assignments I have them do in class. You can see a couple of samples <a href="https://github.com/dgilleland/CPSC-1520-Workbook" target="_blank">here</a>, <a href="https://github.com/dgilleland/DMIT-2008-Workbook" target="_blank">here</a> and <a href="https://github.com/dgilleland/DMIT-1508-Workbook" target="_blank">here</a>.
+
+It's easy to set up and, once it's in place, you can re-use it each term. Just follow these steps.
+
+## Building a Template Repository
+
+<Steps>
+1. Create a new repository on your computer with the files/demos you want the students to start with.
+1. Push it to whatever GitHub account/organization you want. I put all my workbooks as *public* repositories under the GitHub account I use for my work (see the samples linked above).
+1. Go under the "Settings" for your repository and turn on the "Template Repository" checkbox.
+
+    <Image src={tempRepo} alt="Template Repository Setting" />
+
+</Steps>
+
+Voilà! You now have a workbook to distribute whatever way works best for you (I use <a href="https://classroom.github.com" target="_blank">GitHub Classroom</a>).
+
+## Best Practices
+
+Here are some common things you should have in your student workbook template.
+
+<Steps>
+1. Aways add a `ReadMe.md` file. This is your chance to introduce the workbook to your students.
+1. Be sure it has a `.gitignore` file to filter out whatever files/folders you don't want to track in the repo. For example, if I was teaching Python, I would copy [this content from gitignore.io](https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode,python,jupyternotebooks) and paste it into my `.gitigore`.
+1. I also add a `.gitattributes` with at least the following.
+
+    ```
+    * text=auto
+    ```
+    
+    I typically put a lot more in mine, using the sample from David Laing's article <a href="http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/" target="_blank">Customize Your gitattributes to be come a git ninja</a>.
+
+</Steps>
+
+Beyond that, it's a matter of taste as to what other content you want to add to the repo. I typically include a `src` folder as a "parent" to other starter kits I want students to use. When all is said and done, I would have something like the following.
+
+<FileTree>
+- src
+  - -start-here- A simple intro demo they can run
+    - ReadMe.md
+    - sample.py
+  - 001/ The first hands-on demo in class
+- .gitattributes
+- .gitignore
+- ReadMe.md
+</FileTree>
+
