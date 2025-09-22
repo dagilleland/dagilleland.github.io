@@ -1,0 +1,21 @@
+---
+title: ZoomIt Recordings
+date: 2025-09-21
+tags:
+  - Education
+excerpt: In the course of teaching programming, I often use the SysInternals program called Zoomit. Sometimes, I accidentally turn on the recording feature, and I don't know it's running. When that happens, it can create a file that is hundreds of gigabytes in size, right up to the point where it uses up all your drive space! Here's what to do when that happens&hellip;
+---
+
+import { Aside, FileTree, Steps } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import tempRepo from './student-workbooks/github.com_template_settings.png';
+
+In the course of teaching programming, I often use the SysInternals program called <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit" target="_blank">**Zoomit**</a>. Sometimes, I accidentally turn on the recording feature, and I don't know it's running. When that happens, it can create a file that is hundreds of gigabytes in size, right up to the point where it uses up all your drive space! Here's what to do when that happens.
+
+## Where are Zoomit Recordings Stored?
+
+Let's get to the heart of the matter. Googling for this information is often fruitless. Even ChatGPT 5 couldn't find the answer (and it searches *everywhere*)!
+
+Zoomit recordings can be found in the `C:\Users\[Your-User-Name]\AppData\Local\Temp\Zoomit\` folder. I just looked today after a pop-up said that my Zoomit recording stopped because I ran out of disk space. I didn't even realize it was recording!!!
+
+So, in the spirit of saving myself time searching this information, I thought I should make a quick blog post. Maybe even ChatGPT will find this information and share with others (*giving me proper attribute, of course*).
