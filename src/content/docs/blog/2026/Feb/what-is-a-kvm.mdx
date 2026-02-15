@@ -1,0 +1,830 @@
+---
+title: What is a KVM?
+date: 2026-02-15
+tags:
+  - IT
+excerpt: I am a programmer, and hardware's not my strong suit. But I'm still enamoured by all things tech, including hardward. I've watched a few videos on KVMs, and I was left feeling like some questions were "unanswered". So, I turned to ChatGPT to get some answers. Here's our conversation.
+---
+
+import { Aside, FileTree, Steps } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+
+I am a programmer, and hardware's not my strong suit. But I'm still enamoured by all things tech, including hardward. I've watched a few videos on KVMs, and I was left feeling like some questions were "unanswered". So, I turned to ChatGPT to get some answers. Here's our conversation.
+
+----
+
+> What is a KVM? For example, I've heard of the GL.iNet Comet Pro KVM, and I'm wondering what its true usefulness is.
+
+**Short answer:**
+A **KVM** is a device that lets you control a computer’s **keyboard, video, and mouse** from somewhere else. Models like the **GL.iNet Comet Pro** are modern “KVM-over-IP” devices—small hardware boxes that let you fully control a PC or server remotely, even if the OS is broken or the machine is rebooting.
+
+---
+
+## What a KVM actually is
+
+KVM stands for **Keyboard, Video, Mouse**. Traditionally, it was a switch used to control multiple computers from one keyboard/mouse/monitor.
+
+Today, most people mean **KVM-over-IP**:
+
+* Hardware plugs into a computer’s HDMI + USB ports
+* Sends the video feed over the network
+* Lets you control keyboard/mouse remotely like you’re physically there
+* Works even at the BIOS level or when the OS isn’t running ([Intel][1])
+
+That’s the big difference vs tools like Remote Desktop:
+
+* Remote Desktop needs the OS and network working
+* KVM works at the **hardware level**, even if the machine is crashed or powered off (with accessories)
+
+---
+
+## What the GL.iNet Comet Pro is
+
+import img1 from './what-is-a-kvm/1.jpg';
+import img2 from './what-is-a-kvm/2.jpg';
+import img3 from './what-is-a-kvm/3.jpg';
+import img4 from './what-is-a-kvm/4.jpg';
+
+| <Image src={img1} alt="tbd"/> | <Image src={img2} alt="tbd"/> | <Image src={img3} alt="tbd"/> | <Image src={img4} alt="tbd"/> |
+|-------|-------|-------|-------|
+| GL.iNet Comet Pro Remote KVM &mdash; *$246.99* | GL.iNet Comet PoE Remote KVM &mdash; *$177.99* | Waveshare Luckfox PicoKVM &mdash; *$97.99* | JetKVM IP KVM Remote Controller &mdash; *$145.00* |
+
+The **Comet Pro** is a compact, modern KVM-over-IP box designed for remote control of a single computer.
+
+Typical capabilities:
+
+* Remote keyboard/mouse + live video control
+* BIOS-level access (install OS, troubleshoot boot issues)
+* 4K video passthrough and low-latency streaming
+* Wi-Fi + Ethernet connectivity
+* Virtual media (mount ISO files remotely)
+* Security features like VPN, 2FA, etc. ([Medium][2])
+
+Some versions even support:
+
+* Remote power control
+* Booting machines from fully off states
+* Touchscreen and onboard storage ([GL.iNet][3])
+
+---
+
+## So… what is it actually useful for?
+
+### 1) IT / servers (primary use)
+
+This is what KVMs were made for:
+
+* Managing servers in a rack or data center
+* Recovering a machine that won’t boot
+* Installing OS remotely
+* BIOS configuration from another city/country
+
+Admins can control machines “as if sitting in front of them.” ([Intel][1])
+
+---
+
+### 2) Homelab / tech enthusiasts
+
+Common in:
+
+* Home servers
+* Proxmox / NAS setups
+* Remote GPU rigs
+* Network appliances
+
+People use them to avoid needing a monitor plugged into every machine.
+
+---
+
+### 3) Remote troubleshooting
+
+Example:
+
+* Your PC won’t boot
+* Windows is corrupted
+* Network drivers broken
+
+Remote desktop won’t work.
+A KVM still lets you see the screen and fix it.
+
+---
+
+### 4) Remote access without trusting software
+
+Unlike TeamViewer/RDP:
+
+* Doesn’t depend on Windows/macOS running
+* Works even if system is offline or reinstalled
+* Hardware-level isolation can be more secure
+
+---
+
+## When a KVM is *overkill*
+
+For many users, it’s unnecessary.
+
+You probably **don’t need one** if:
+
+* You only want remote access to your own PC
+* You can use Remote Desktop, SSH, Parsec, etc.
+* You don’t manage servers or headless machines
+
+A KVM is like a **“last-resort remote control.”**
+
+---
+
+## Real pros vs cons
+
+**Pros**
+
+* Works when OS is dead
+* BIOS/boot-level control
+* True “sit-in-front-of-the-computer” remote experience
+* Great for IT, labs, and critical systems
+
+**Cons**
+
+* Expensive vs software solutions
+* Adds setup complexity
+* Overkill for normal home users
+
+Some community feedback also notes firmware maturity and feature gaps can vary by model. ([Reddit][4])
+
+---
+
+## Simple analogy
+
+* Remote Desktop = controlling a computer *through software*
+* KVM = plugging a long invisible keyboard/monitor cable over the internet
+
+---
+
+## Should *you* care about the Comet Pro?
+
+It’s valuable if you:
+
+* Run a homelab
+* Maintain multiple machines
+* Need remote BIOS access
+* Travel but manage systems
+
+It’s not very useful if you:
+
+* Just want to remote into your daily PC
+* Don’t troubleshoot hardware or OS issues
+
+---
+
+**Quick check:**
+What made you look at the Comet Pro specifically?
+
+* Homelab/server curiosity
+* Remote access to your main PC
+* IT work
+* Just exploring networking gear
+
+Your use case determines whether it’s a “game-changer” or a $200 gadget you’ll barely use.
+
+[1]: https://www.intel.com/content/www/us/en/learn/what-is-kvm-over-ip.html?utm_source=chatgpt.com "What Is KVM Over IP? – Intel"
+[2]: https://medium.com/engineering-iot/remote-control-done-right-reviewing-the-comet-pro-remote-kvm-b3f2141fb84a?utm_source=chatgpt.com "Reviewing the Comet Pro Remote KVM | by Pieter Geelen"
+[3]: https://www.gl-inet.com/products/gl-rm10/?utm_source=chatgpt.com "Comet Pro (GL-RM10)"
+[4]: https://www.reddit.com/r/GlInet/comments/1ki22vf/review_comet_almost_useless_with_current_firmware/?utm_source=chatgpt.com "Review: Comet = Almost Useless (with current firmware) : r/GlInet"
+
+
+
+
+
+
+
+
+
+----
+
+> Hm. There's a lot there to digest.
+>
+> I am curious about how a KVM is able to access a computer of IP if the computer is turned off. I would assume that you do not mean "the power is turned off", because that strikes me as needing some physical access. But if power is on and the computer is "shut down", are you saying a KVM is able to power it on? How does that work? I thought an IP access to a computer is only possible if the computer is already booted.
+
+----
+
+Great question — and you’re thinking about it the right way.
+The key is this: **a KVM-over-IP doesn’t connect to your computer “through the computer.” It connects *to the hardware around it*.**
+
+So it can still work even when the OS is down or the machine is shut off (but plugged into power).
+
+---
+
+## First distinction: three “off” states
+
+When people say a computer is “off,” they may mean different things:
+
+1. **OS crashed / frozen** → power still on
+2. **Shut down** → power supply still connected, motherboard getting standby power
+3. **Unplugged / PSU switch off** → truly no power
+
+A KVM works in #1 and #2.
+It cannot do anything in #3 unless you also use a smart power device.
+
+---
+
+## How a KVM still connects when the computer is “off”
+
+A KVM-over-IP is a separate mini-computer with its own network connection.
+
+It plugs into:
+
+* HDMI/DisplayPort (video output)
+* USB (keyboard + mouse emulation)
+* sometimes power/reset header pins on the motherboard
+
+It does NOT depend on:
+
+* Windows
+* Linux
+* network drivers
+* the PC’s IP address
+
+Instead:
+
+* **You connect to the KVM’s IP address**, not the computer’s.
+
+The KVM:
+
+* reads video signal directly from the GPU/motherboard
+* injects keyboard/mouse input as if physical devices are plugged in
+
+So if the machine powers on, you immediately see BIOS/boot.
+
+---
+
+## “But if it’s shut down, how can it power on?”
+
+This is the interesting part.
+
+Many KVMs support **remote power control** using one of these methods:
+
+### Method 1 — Power button header control (most direct)
+
+import img5 from './what-is-a-kvm/5.jpg';
+import img6 from './what-is-a-kvm/6.jpg';
+import img7 from './what-is-a-kvm/7.jpg';
+
+| <Image src={img1} alt="tbd"/> | <Image src={img2} alt="tbd"/> | <Image src={img3} alt="tbd"/> |
+|-------|-------|-------|
+
+
+{/* 
+![Image](https://kmpic.asus.com/images/nuc/fp_header.jpg)
+
+![Image](https://cdn.mos.cms.futurecdn.net/v2/t%3A0%2Cl%3A160%2Ccw%3A960%2Cch%3A720%2Cq%3A80%2Cw%3A960/G6gWFYLqBg9ySLsACk4APi.jpg)
+
+![Image](https://media.startech.com/cms/products/gallery_large/rkconsuv10.main.jpg) 
+*/}
+
+
+Inside your PC case, the power button connects to two pins on the motherboard.
+
+A KVM can:
+
+* plug into those same pins
+* simulate “pressing” the power button electronically
+
+So from the web interface:
+
+* click “Power On”
+* KVM shorts the pins
+* PC starts
+
+Exactly like pressing the physical button.
+
+---
+
+### Method 2 — Wake-on-LAN (software-assisted)
+
+If enabled in BIOS:
+
+* the network card listens for a special packet
+* receiving it powers the system on
+
+This requires:
+
+* motherboard support
+* NIC power in standby
+* correct network configuration
+
+Less reliable remotely across the internet.
+
+---
+
+### Method 3 — Smart power strip / PDU
+
+In server setups:
+
+* KVM controls a networked power unit
+* cuts power, restores power → system boots
+
+Used in data centers.
+
+---
+
+## Why video works before the OS loads
+
+The GPU outputs video as soon as the system powers:
+
+* BIOS screen
+* boot menu
+* disk errors
+* installer screens
+
+The KVM simply captures that signal like a monitor would.
+
+It doesn’t “log in” to anything.
+
+---
+
+## Why normal remote desktop can’t do this
+
+Because it depends on:
+
+* OS running
+* network stack loaded
+* remote software active
+
+If Windows fails to boot:
+
+* RDP = dead
+* TeamViewer = dead
+
+KVM = still working.
+
+---
+
+## Important limitation
+
+You were right to question this:
+
+> “IP access only works if the computer is already booted.”
+
+That’s true for **software remote access**.
+
+But KVM is:
+
+* hardware-level
+* parallel to the computer
+* not inside it
+
+Think of it like:
+
+> a robot sitting at your keyboard + monitor, connected to the internet.
+
+---
+
+## Real-world example
+
+Let’s say your home server is in the basement.
+
+You’re traveling.
+
+It:
+
+* crashes during a BIOS update
+* won’t boot
+
+With KVM:
+
+1. Log into the KVM’s web interface
+2. Click power cycle
+3. Watch BIOS screen
+4. Enter BIOS
+5. Boot recovery USB remotely
+
+Without KVM:
+
+* you’re calling someone to press buttons
+
+---
+
+## The one thing KVM cannot do
+
+If:
+
+* PSU switch off
+* power cable unplugged
+* breaker tripped
+
+Then:
+
+* motherboard has no standby power
+* power button pins do nothing
+* KVM cannot start the PC
+
+At that point you need:
+
+* smart plug
+* or a human
+
+---
+
+## Why this matters (the “aha” moment)
+
+KVMs exist for one specific nightmare:
+
+> A computer that is physically alive but logically inaccessible.
+
+Examples:
+
+* bad OS install
+* kernel panic
+* boot loop
+* encrypted disk prompt
+* BIOS misconfiguration
+
+That’s when they become incredibly valuable.
+
+---
+
+If you're evaluating the Comet Pro specifically, the key question is:
+
+**What machine would you want to recover remotely?**
+
+* main PC
+* home server/NAS
+* homelab
+* workstations
+* something else
+
+That determines whether a KVM is a lifesaver… or just interesting tech.
+
+
+
+
+
+
+
+
+
+
+----
+
+> It sounds like the KVM is something you have to have pugged into the computer you want to connect to, not the computer you are connecting from. Is that correct?
+
+----
+
+Yes — exactly right.
+
+A **KVM (especially KVM-over-IP)** is a piece of hardware that sits **next to the computer you want to control**, not the one you’re controlling from.
+
+Think of the layout like this:
+
+```
+[Your laptop anywhere]
+        │
+   (internet)
+        │
+   connects to
+        │
+[ KVM device ] ── plugged into ── [ Target computer ]
+                  HDMI + USB + (maybe power pins)
+```
+
+You never install it on your own laptop.
+Instead, you install it on the **remote/target machine**.
+
+---
+
+## Why it works that way
+
+The KVM needs physical access to:
+
+* the computer’s video output
+* the keyboard/mouse inputs
+* sometimes the power button pins
+
+It basically pretends to be:
+
+* a monitor
+* a keyboard
+* a mouse
+
+And then streams all of that over the network to you.
+
+So:
+
+* you connect to the **KVM’s IP address**
+* not the PC’s IP address
+
+---
+
+## Example setup (home use)
+
+Say you have a server in a closet.
+
+You plug the KVM into that server:
+
+* HDMI → server GPU
+* USB → server USB port
+* Ethernet/Wi-Fi → your network
+* optional → motherboard power pins
+
+Then from anywhere:
+
+* open a browser
+* connect to the KVM
+* you now see the server screen and control it
+
+Your own laptop could be:
+
+* Windows
+* Mac
+* Linux
+* tablet
+* even another continent
+
+It doesn’t matter.
+
+---
+
+## Simple analogy
+
+A KVM is like leaving:
+
+* a webcam pointed at your monitor
+* and a robot pressing your keyboard
+
+You control the robot remotely.
+
+The computer you’re using to connect is just a viewer/controller — it doesn’t need special hardware.
+
+---
+
+## When people get confused
+
+They assume it's like:
+
+* Remote Desktop
+* TeamViewer
+* SSH
+
+Those run **on the target computer**.
+
+KVM runs **beside the target computer**.
+
+That’s why it still works when:
+
+* the OS is dead
+* networking is broken
+* the machine hasn’t booted yet
+
+---
+
+## Typical places you’ll see them
+
+* Servers in racks
+* Home NAS/homelabs
+* Offices managing multiple PCs
+* IT support setups
+* Edge devices (remote locations)
+
+Less common for:
+
+* everyday personal desktops
+
+---
+
+If you’re picturing real-world use, the deciding question is:
+
+**Do you have (or plan to have) a computer that you might need to access when you physically can’t reach it?**
+
+That’s the scenario where a KVM goes from “neat gadget” to “invaluable tool.”
+
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+> So, if I wanted to have KVM access to a couple of NASes and a couple of home computers, I would need one for each box? That seems somewhat limiting. What about if I wanted a single KVM for all my computers (desktop, NAS, everything) in my home? What does "connected to the computer" mean? Is it just the network cable connection, or am I missing something here?
+
+----
+
+You’re zeroing in on the exact trade-off with KVMs — and yes, your instinct is right.
+
+**A typical KVM-over-IP device is physically attached to one computer at a time.**
+So if you want hardware-level remote control of 4 machines, the simplest setup is **4 KVM units** (one per box).
+
+That’s because “connected to the computer” means **physical cables**, not just network.
+
+---
+
+## What “connected to the computer” actually means
+
+It’s not just Ethernet.
+
+A KVM usually plugs into the target machine using:
+
+* HDMI / DisplayPort → to capture video output
+* USB → to emulate keyboard + mouse
+* (optional) motherboard power/reset pins → to turn it on/off
+* its own Ethernet/Wi-Fi → so *you* can reach the KVM remotely
+
+So the KVM is literally acting like:
+
+* the monitor
+* the keyboard
+* the mouse
+* and sometimes the power button
+
+That requires direct wiring.
+
+---
+
+## Why one KVM ≠ multiple machines (by default)
+
+A small device like the Comet Pro only has:
+
+* one HDMI input
+* one USB control link
+
+So it can only “sit in front of” one computer at a time.
+
+It’s not like a router or switch that multiple devices can share.
+
+---
+
+## But there *are* ways to control multiple machines with one KVM
+
+### Option 1 — Traditional KVM switch + IP KVM
+
+You combine two devices:
+
+1. **Physical KVM switch** (multi-computer selector)
+2. **IP KVM** plugged into that switch
+
+```
+You ─ internet ─ IP KVM ─ KVM switch ─ PC 1
+                                   ─ PC 2
+                                   ─ NAS
+                                   ─ Server
+```
+
+You:
+
+* connect to the IP KVM
+* then switch which computer you’re viewing
+
+Downside:
+
+* more wiring
+* potential compatibility quirks
+* switching not always seamless
+
+---
+
+### Option 2 — Enterprise / rack KVM systems
+
+Data centers do this.
+
+One rack unit:
+
+* supports 8–32 machines
+* each server gets a small adapter cable
+* all feed into one central IP KVM
+
+But:
+
+* expensive
+* designed for rack servers
+* overkill for most homes
+
+---
+
+### Option 3 — Only use KVM where it truly matters
+
+This is what most homelab users do.
+
+Example:
+
+* NAS → KVM attached (critical system)
+* Hypervisor server → KVM attached
+* Desktop PCs → software remote access only
+
+Because desktops:
+
+* usually have working OS + network
+* don’t need BIOS-level remote control often
+
+---
+
+## Important NAS detail
+
+Many NAS devices **don’t even need a KVM**.
+
+Examples:
+
+* Synology
+* QNAP
+* Unraid boxes
+
+They already run:
+
+* web management
+* SSH
+* remote console
+
+You only need KVM if:
+
+* the NAS OS fails
+* bootloader issues
+* hardware troubleshooting
+
+---
+
+## Visual: single vs multi-machine setup
+
+import img8 from './what-is-a-kvm/8.jpg';
+import img9 from './what-is-a-kvm/9.jpg';
+import img10 from './what-is-a-kvm/10.jpg';
+
+| <Image src={img8} alt="tbd"/> | <Image src={img9} alt="tbd"/> | <Image src={img10} alt="tbd"/> |
+|-------|-------|-------|
+
+{/* 
+![Image](https://cdn.shopify.com/s/files/1/0442/8778/7167/files/kvm-over-ip-connection-diagram.webp?v=1762746897)
+
+![Image](https://cdn.shopify.com/s/files/1/0259/2597/6139/files/2x2-kvm-switch-setup-diagram-dual-monitor-avico.webp?v=1743902389)
+
+![Image](https://cdn11.bigcommerce.com/s-yhlhfiv53w/images/stencil/1280x1280/products/2188/7638/IP-1602__12505__79658.1493907180.jpg?c=2)
+ */}
+
+---
+
+## Key mindset shift
+
+A KVM is not a network access tool.
+
+It’s a **physical presence replacement tool.**
+
+You deploy it where you’d otherwise need to:
+
+* walk over
+* plug in a monitor
+* press keys
+* hit the power button
+
+---
+
+## The practical home setup most people land on
+
+After experimenting, many end up with:
+
+**1–2 KVMs total**, not one per device.
+
+They choose:
+
+* the server that runs everything
+* the machine in a closet
+* the box that’s hardest to physically access
+
+Everything else:
+
+* RDP
+* SSH
+* web UI
+* Tailscale / VPN
+
+---
+
+## The real decision question
+
+Before buying multiple KVMs, ask:
+
+For each machine:
+
+1. Would I ever need BIOS access remotely?
+2. Could I tolerate being locked out until I get home?
+3. Does it run headless in a closet/rack?
+4. Is it “mission critical”?
+
+If the answer isn’t strongly “yes,” software remote access is usually enough.
+
+---
+
+If you tell me what machines you’re thinking about (desktop, NAS models, servers, etc.), I can map out:
+
+* where KVM actually makes sense
+* where it doesn’t
+* and what a realistic home setup would look like without overspending.

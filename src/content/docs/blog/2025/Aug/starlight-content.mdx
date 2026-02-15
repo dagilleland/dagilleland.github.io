@@ -1,0 +1,62 @@
+---
+title: About Starlight Content
+date: 2025-08-04
+draft: true
+tags:
+  - Astro
+  - Starlight
+excerpt: If you've been using Astro Starlight since its early days, you might not realize that it allows you to create docs in subfolders without complicated `sidebar` configuration. In fact, you don't even need the `sidebar` configuration at all&hellip;
+---
+
+import { FileTree, Aside } from '@astrojs/starlight/components';
+
+<Aside title="Were you an Early Adopter?">
+
+If you've been using Astro Starlight since its early days, you might not realize that it allows you to create docs in subfolders without complicated `sidebar` configuration.
+
+</Aside>
+
+## When I Jumped on the Bandwagon
+
+I've been using Astro Starlight heavily since January 2025. Key to content creation in Starlight is how it generates pages from Markdown and MDX files. In fact, this is **the** biggest thing I look for in a documentation-heavy site: the ability to *focus* on written content. Markdown is **the *go-to*** format for written content.
+
+Starlight uses Astro's Content Collections feature as the basis for documentation. When I jumped onto the bandwagon, I read their notes on the `sidebar` configuration in `astro.config.mjs` and on the project structure and creation of pages. From what I read, I clearly saw a pattern wherein the structure of your content was fairly flat and rigid. The starter kit contents reinforced that perspective.
+
+<FileTree>
+
+- src
+  - content
+    - docs
+      - guides
+        - example.md
+      - reference
+        - example.md
+
+</FileTree>
+
+Thus, if I wanted content under `Guides`, I would have to have all my markdown pages as immediate children of the `guides` folder. If I wanted other folders/structures, I needed to explicitly configure them within the `sidebar` in `astro.config.mjs`.
+
+Now, that's no longer the case.
+
+## Simpler is Better
+
+While the starter kit for Starlight still includes the `sidebar` configuration, it's not strictly needed anymore. If you remove that part from the configuration, then Starlight will simply build the sidebar navigation directly from the file/folder structure you are using.
+
+### Using `sidebar`
+
+- [ ] Explicitly determines the sidebar navigation panel's content
+- [ ] Markdown files not in folders identified from the `sidebar` will not appear in the sidebar navigation, but will still be generated as legitimate "page routes"
+
+### Without `sidebar`
+
+- [ ] First item for the first Navigation will default to your `docs/index.mdx`
+- [ ] All other markdown docs will be shown in alphanumeric order & folder structure
+- [ ] Case sensitivity for folder names is "preserved"
+- [ ] Folder contents expanded by default
+- [ ] All use the `title` frontmatter item as the name of the navigation item.
+
+----
+
+## Also True for Starlight Blog
+
+
