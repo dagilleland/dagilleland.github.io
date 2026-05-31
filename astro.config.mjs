@@ -36,11 +36,11 @@ export default defineConfig({
                 },
                 {
                     label: 'Reference',
-                    autogenerate: { directory: 'reference' },
+                    items: [{autogenerate: { directory: 'reference' }}],
                 },
                 {
                     label: 'Archives',
-                    autogenerate: { directory: 'archives' },
+                    items: [{autogenerate: { directory: 'archives' }}],
                 },                
             ],
             customCss: ['./src/tailwind.css'],
